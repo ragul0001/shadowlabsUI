@@ -44,7 +44,7 @@ const Header = () => {
       <div className="container mx-auto lg:px-8 max-w-7xl px-4 py-10 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold">
-          <img src={logo} alt='the logo' />
+          <img src={logo} alt='the logo'  onClick={() => setIsOpen(false)}/>
         </div>
 
         {/* Hamburger Menu Icon */}
@@ -75,7 +75,7 @@ const Header = () => {
         >
           <div className="flex text-[#fff] flex-col lg:flex-row lg:items-center lg:space-x-10 p-4 lg:p-0">
             {/* Close Button */}
-            <div className="self-end mb-4 md:hidden">
+            <div className="self-end mb-4 lg:hidden">
               <button onClick={() => setIsOpen(false)} className="focus:outline-none">
                 <svg
                   className="w-6 h-6"
