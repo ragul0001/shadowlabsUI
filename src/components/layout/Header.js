@@ -104,7 +104,7 @@ const Header = () => {
                 }`}
               >
                 <ul className='flex flex-row lg:flex-col list-none items-center'>
-                  <li className={`transition-transform duration-300 ${activeLink === item.name ? 'scale-125' : 'scale-100'}`}>
+                <li className={`transition-transform duration-300 ${activeLink === item.name ? 'scale-125 animate-bounce' : 'scale-100'}`}>
                     <img src={activeLink === item.name ? item.activeIcon : item.icon} alt={`${item.label} icon`} />
                   </li>
                   <li className={`mx-3 my-5 lg:mx-0 lg:my-0 text-[14px]  transition-transform duration-300 ${activeLink === item.name ? 'scale-110' : ''}`}>
