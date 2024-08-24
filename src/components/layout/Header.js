@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assests/logo/logo.png';
 import home from '../../assests/Menu-Icons/home.png';
-import App from '../../assests/Menu-Icons/app.png';
+import AppIcon from '../../assests/Menu-Icons/app.png';
 import Game from '../../assests/Menu-Icons/game.png';
 import Gamification from '../../assests/Menu-Icons/game.png';
 import Ar from '../../assests/Menu-Icons/ar-vr.png';
@@ -21,34 +22,31 @@ import contactActive from '../../assests/Menu-Icons/contact-active.png';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState('');
-
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
-    setIsOpen(false); // Close the menu when a link is clicked (optional)
-  };
+  const location = useLocation();
 
   const menuItems = [
-    { name: 'home', icon: home, activeIcon: homeActive, label: 'HOME' },
-    { name: 'app', icon: App, activeIcon: AppActive, label: 'APP' },
-    { name: 'game', icon: Game, activeIcon: GameActive, label: 'GAME' },
-    { name: 'gamification', icon: Gamification, activeIcon: GamificationActive, label: 'GAMIFICATION' },
-    { name: 'ar', icon: Ar, activeIcon: ArActive, label: 'AR/VR' },
-    { name: 'web', icon: web, activeIcon: webActive, label: 'WEB 3.0' },
-    { name: 'blog', icon: Blog, activeIcon: BlogActive, label: 'BLOG' },
-    { name: 'contact', icon: contact, activeIcon: contactActive, label: 'CONTACT' },
+    { name: 'home', path: '/', icon: home, activeIcon: homeActive, label: 'HOME' },
+    { name: 'app', path: '/app', icon: AppIcon, activeIcon: AppActive, label: 'APP' },
+    { name: 'game', path: '/game', icon: Game, activeIcon: GameActive, label: 'GAME' },
+    { name: 'gamification', path: '/gamification', icon: Gamification, activeIcon: GamificationActive, label: 'GAMIFICATION' },
+    { name: 'ar', path: '/ar', icon: Ar, activeIcon: ArActive, label: 'AR/VR' },
+    { name: 'web', path: '/web', icon: web, activeIcon: webActive, label: 'WEB 3.0' },
+    { name: 'blog', path: '/blog', icon: Blog, activeIcon: BlogActive, label: 'BLOG' },
+    { name: 'contact', path: '/contact', icon: contact, activeIcon: contactActive, label: 'CONTACT' },
   ];
 
   return (
-    <nav className="bg-[#0c0e1a] shadow-md fixed w-full z-10">
+    <nav className="bg-[#0c0e1a] shadow-md   w-full z-10">
       <div className="container mx-auto lg:px-8 max-w-7xl px-4 py-10 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold">
-          <img src={logo} alt='the logo'  onClick={() => setIsOpen(false)}/>
+          <Link to="/" onClick={() => setIsOpen(false)}>
+            <img src={logo} alt="the logo" />
+          </Link>
         </div>
 
         {/* Hamburger Menu Icon */}
-        <div className="block  lg:hidden">
+        <div className="block lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
             <svg
               className="w-6 h-6 text-white"
@@ -95,23 +93,34 @@ const Header = () => {
             </div>
 
             {menuItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href="#"
-                onClick={() => handleLinkClick(item.name)}
+                to={item.path}
+                onClick={() => setIsOpen(false)}
                 className={`flex items-center text-lg font-medium transition duration-300 ease-in-out transform hover:scale-110 ${
-                  activeLink === item.name ? 'text-[#3c66ee] underline  border-[#3c66ee]' : 'hover:text-[#3c66ee]'
+                  location.pathname === item.path ? 'text-[#3c66ee] underline border-[#3c66ee]' : 'hover:text-[#3c66ee]'
                 }`}
               >
-                <ul className='flex flex-row lg:flex-col list-none items-center'>
-                <li className={`transition-transform duration-300 ${activeLink === item.name ? 'scale-125 animate-bounce' : 'scale-100'}`}>
-                    <img src={activeLink === item.name ? item.activeIcon : item.icon} alt={`${item.label} icon`} />
+                <ul className="flex flex-row lg:flex-col list-none items-center">
+                  <li
+                    className={`transition-transform duration-300 ${
+                      location.pathname === item.path ? 'scale-125' : 'scale-100 hover:animate-bounce'
+                    }`}
+                  >
+                    <img
+                      src={location.pathname === item.path ? item.activeIcon : item.icon}
+                      alt={`${item.label} icon`}
+                    />
                   </li>
-                  <li className={`mx-3 my-5 lg:mx-0 lg:my-0 text-[14px]  transition-transform duration-300 ${activeLink === item.name ? 'scale-110' : ''}`}>
+                  <li
+                    className={`mx-3 my-5 lg:mx-0 lg:my-0 text-[14px] transition-transform duration-300 ${
+                      location.pathname === item.path ? 'scale-110' : ''
+                    }`}
+                  >
                     {item.label}
                   </li>
                 </ul>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
