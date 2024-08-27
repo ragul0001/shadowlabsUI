@@ -150,7 +150,7 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
                 className={`flex items-center text-lg font-medium transition duration-300 ease-in-out transform hover:scale-110 ${
                   location.hash === `#${item.path.split("#")[1]}`
-                    ? "text-[#3c66ee] border-b border-[#3c66ee]"
+                    ? "text-[#3c66ee] border-b-0 border-[#3c66ee] lg:border-b-2 "
                     : "hover:text-[#3c66ee]"
                 }`}
               >
