@@ -15,7 +15,7 @@ function Home() {
       {/* Welcome Pages */}
       <div
         id="welcome"
-        className="container inset-0 flex items-center justify-center min-h-screen mx-auto max-w-7xl lg:px-8"
+        className="container inset-0 flex items-center justify-center py-32  mx-auto max-w-7xl lg:px-8"
       >
         <section className="">
           <div className="flex justify-center ">

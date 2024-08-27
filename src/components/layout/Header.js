@@ -82,7 +82,7 @@ const Header = () => {
   }, [location]);
   return (
     <nav className="bg-[#0c0e1a] shadow-md w-full z-10">
-      <div className="container mx-auto lg:px-8 max-w-7xl px-4 py-10 flex justify-between items-center">
+      <div className="container mx-auto lg:px-8 max-w-7xl px-4 py-6 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold">
           <Link to="/" onClick={() => setIsOpen(false)}>
