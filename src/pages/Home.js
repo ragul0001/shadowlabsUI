@@ -129,39 +129,16 @@ Native app is fast, reliable, and scalable.
           </div>
         </div>
       </section>
-      {/* Game */}
-      {/* <section
-  className='bg-cover bg-center  flex items-center justify-center'
-  style={{ backgroundImage: `url(${game})` }}
->
-  <div className='container h-screen overflow-hidden mx-auto max-w-7xl lg:px-8'>
-    <div className='flex justify-center items-center h-full'>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 md:px-3 lg:px-0 py-5'>
-      
-      <div className=''>
-          <img src={appimg} alt='the content image' className='hidden'   />
-        </div>
-      
-        <div>
-          <div>
-            <h1 className='text-[30px] text-white font-regular'>Game Development</h1>
-            <p className='text-[14px] text-white font-light my-5 text-justify'>Our team is skilled in creating immersive 2D and 3D games using the latest
-            technology. We have extensive experience working with Unity, Unreal Engine, andHTML5, delivering high-quality games across mobile, console, and web platforms. Whether it’s casual mobile games or complex simulations, we tailor each project toresonate with its audience. </p>
-                         
-            <button className='border border-blue-600 text-white px-3 w-32 py-2 rounded-full hover:bg-[#3c66ee] hover:duration-150'>
-              Explore
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-      </section> */}
+
       {/* Gamifications */}
       <div className="bg-[#0C0E1A]" id="gamification">
         <div className="container min-h-screen overflow-hidden flex justify-center items-center mx-auto max-w-7xl lg:px-8">
           <div className="flex justify-center items-center h-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 md:px-3 lg:px-0 py-5">
+              <div className="">
+                <img src={gamification} alt="the content image" className="" />
+              </div>
+
               <div>
                 <div>
                   <h1 className="text-[30px] text-white font-regular">
@@ -181,14 +158,11 @@ Native app is fast, reliable, and scalable.
                   </button>
                 </div>
               </div>
-              <div className="">
-                <img src={gamification} alt="the content image" className="" />
-              </div>
             </div>
           </div>
         </div>
       </div>
-      {/* AR/VR */}
+      {/* AR */}
       <section className="bg-black" id="ar">
         <div className="container inset-0 flex items-center justify-center min-h-screen mx-auto max-w-7xl lg:px-8">
           <section className="">
@@ -200,7 +174,7 @@ Native app is fast, reliable, and scalable.
                 <div className="mx-0 md:mx-5">
                   <div>
                     <h1 className="text-[30px] text-white font-regular">
-                      AR/VR Development
+                      AR Development
                     </h1>
                     <p className="text-[14px] text-white font-light my-5">
                       {" "}
@@ -221,6 +195,41 @@ Native app is fast, reliable, and scalable.
           </section>
         </div>
       </section>
+      {/* VR */}
+      <section
+        id="vr"
+        className="bg-cover bg-center  flex items-center justify-center"
+        style={{ backgroundImage: `url(${game})` }}
+      >
+        <div className="container h-screen overflow-hidden mx-auto max-w-7xl lg:px-8">
+          <div className="flex justify-center items-center h-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 md:px-3 lg:px-0 py-5">
+              <div className="">
+                <img src={appimg} alt="the content image" className="hidden" />
+              </div>
+
+              <div>
+                <div>
+                  <h1 className="text-[30px] text-white font-regular">
+                    VR Development
+                  </h1>
+                  <p className="text-[14px] text-white font-light my-5 text-justify">
+                    Our VR development team creates fully immersive, realistic
+                    virtual environments that transport users to entirely new
+                    worlds. Whether for gaming, training, or virtual tours, we
+                    deliver high-quality VR solutions that engage and inspire,
+                    leveraging the latest invirtual reality technology{" "}
+                  </p>
+
+                  <button className="border border-blue-600 text-white px-3 w-32 py-2 rounded-full hover:bg-[#3c66ee] hover:duration-150">
+                    Explore
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Web3.0 */}
       <section
         id="web"
@@ -235,7 +244,7 @@ Native app is fast, reliable, and scalable.
                   <h1 className="text-[30px] text-white font-regular">
                     Web 3.0
                   </h1>
-                  <p className="text-[16px] text-white font-light my-5 text-justify w-10/12">
+                  <p className="text-[16px] text-white font-light my-5 text-justify ">
                     We are driving the future of the web with our Web 3.0
                     services, including blockchaindevelopment, NFT creation, and
                     decentralized applications. Our expertise in blockchain
@@ -250,7 +259,7 @@ Native app is fast, reliable, and scalable.
                 </div>
               </div>
 
-              <div className="">
+              <div className="mx-0 lg:mx-20">
                 <img src={Webicon} alt="the content image" className="" />
               </div>
             </div>
@@ -280,82 +289,37 @@ Native app is fast, reliable, and scalable.
                   </button>
                 </div>
               </div>
-              <div className="mx-0 md:mx-5">
-                <div className="flex items-center my-10">
+              <div className="mx-0 md:mx-5 my-6">
+                <div class="">
                   <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-14 text-white rounded-none"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-                      />
-                    </svg>
+                    <span class="uppercase text-sm text-white font-bold">
+                      Full Name
+                    </span>
+                    <input
+                      class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                      type="text"
+                      placeholder=""
+                    />
                   </div>
-                  <div className="mx-3">
-                    <h1 className="text-[30px] text-white font-regular">
-                      Email Address
-                    </h1>
-                    <p className="text-white my-1">shadowlabs@gmail.com</p>
+                  <div class="mt-8">
+                    <span class="uppercase text-sm text-white  font-bold">
+                      Email
+                    </span>
+                    <input
+                      class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                      type="text"
+                    />
                   </div>
-                </div>
-                <div className="flex items-center mb-10">
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-14 text-white"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
-                      />
-                    </svg>
+                  <div class="mt-8">
+                    <span class="uppercase text-sm text-white  font-bold">
+                      Message
+                    </span>
+                    <textarea class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
                   </div>
-                  <div className="mx-3">
-                    <h1 className="text-[30px] text-white font-regular">
-                      Phone Number
-                    </h1>
-                    <p className="text-white my-1">+91 00000-00000</p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-14 text-white"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                      />
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                      />
-                    </svg>
-                  </div>
-                  <div className="mx-3">
-                    <h1 className="text-[30px] text-white font-regular">
-                      Our Location
-                    </h1>
-                    <p className="text-white my-1">xxx,yyy,zzz.</p>
+                  <div class="mt-8">
+                    <button class="relative h-[50px] rounded-full w-full overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all before:absolute before:left-0 before:right-0 before:top-0 before:h-0 before:w-full before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-[#3c66ee] after:duration-500 hover:text-white hover:shadow-[#3c66ee] hover:before:h-2/4 hover:after:h-2/4">
+                      <span class="relative z-10">Send Message</span>
+                    </button>
                   </div>
                 </div>
               </div>

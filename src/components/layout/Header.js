@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assests/logo/logo.png";
+import logo from "../../assests/logo/Logo-new.png";
 import home from "../../assests/Menu-Icons/home.png";
 import AppIcon from "../../assests/Menu-Icons/app.png";
 import Game from "../../assests/Menu-Icons/game.png";
@@ -52,7 +52,14 @@ const Header = () => {
       path: "/#ar",
       icon: Ar,
       activeIcon: ArActive,
-      label: "AR/VR",
+      label: "AR",
+    },
+    {
+      name: "vr",
+      path: "/#vr",
+      icon: Ar,
+      activeIcon: ArActive,
+      label: "VR",
     },
     {
       name: "web",
