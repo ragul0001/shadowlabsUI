@@ -11,7 +11,9 @@ import Contactimg from "../assests/Menu-Icons/background-with-flat-contact-eleme
 
 function Home() {
   return (
+    
     <div className="bg-[#0c0e1a]">
+
       {/* Welcome Pages */}
       <div
         id="welcome"
@@ -328,6 +330,7 @@ Native app is fast, reliable, and scalable.
         </section>
       </div>
     </div>
+  
   );
 }
 
