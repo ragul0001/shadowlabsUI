@@ -16,11 +16,11 @@ function Home() {
       {/* Welcome Pages */}
       <div
         id="welcome"
-        className="container inset-0 flex items-center justify-center py-32  mx-auto max-w-7xl lg:px-8"
+        className="container inset-0 flex items-center justify-center pt-16  mx-auto max-w-7xl lg:px-8"
       >
         <section className="">
           <div className="flex justify-center ">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 md:px-0 py-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 md:px-0 py-0">
               <div className="">
                 <img src={image1} alt="the content image" />
               </div>
@@ -61,7 +61,7 @@ function Home() {
                   <h1 className="text-[30px] text-white font-regular">
                     App Development
                   </h1>
-                  <p className="text-[16px] text-white font-light my-5 text-justify">
+                  <p className="text-[14px] text-white font-light my-5 text-justify">
                     We specialize in building cutting-edge applications across
                     multiple platforms. Our experience spans over years of
                     developing robust, scalable, and innovative mobile apps.
@@ -258,7 +258,7 @@ Native app is fast, reliable, and scalable.
                   <h1 className="text-[30px] text-white font-regular">
                     Web 3.0
                   </h1>
-                  <p className="text-[16px] text-white font-light my-5 text-justify ">
+                  <p className="text-[14px] text-white font-light my-5 text-justify ">
                     We are driving the future of the web with our Web 3.0
                     services, including blockchaindevelopment, NFT creation, and
                     decentralized applications. Our expertise in blockchain
@@ -294,7 +294,7 @@ Native app is fast, reliable, and scalable.
               <div className="">
                 <div>
                   <h1 className="text-[30px] text-white">Get in Touch</h1>
-                  <p className="text-[16px] text-white font-light my-5 text-justify">
+                  <p className="text-[14px] text-white font-light my-5 text-justify">
                     Efficiently unleash cross-media information without
                     cross-media value. Quickly maximize timely deliverable.
                     Exerci tation ullamcorper suscipit lobortis nisl ut aliquip
