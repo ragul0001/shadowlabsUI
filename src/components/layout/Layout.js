@@ -61,7 +61,7 @@ const Layout = ({ children }) => {
       <div className="bg-[#0c0e1a] py-5">
         <div className="flex justify-center">
           <p className="text-white">
-            Copyrights &copy; {year} Shadow Fox.All rights reserved.{" "}
+            Copyrights &copy; {year} Endorphinx. All rights reserved.{" "}
           </p>
         </div>
       </div>

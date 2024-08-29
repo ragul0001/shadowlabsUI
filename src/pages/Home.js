@@ -5,6 +5,7 @@ import appimg from "../assests/background/app-img.png";
 import game from "../assests/background/game-bg.jpg";
 import gamification from "../assests/background/gamification.jpg";
 import AR from "../assests/background/ar-vr.jpg";
+
 import Web from "../assests/background/web3.0-bg.jpg";
 import Webicon from "../assests/background/web3.0-icon.png";
 import Contactimg from "../assests/Menu-Icons/background-with-flat-contact-elements.png";
@@ -26,18 +27,13 @@ function Home() {
               <div className="mx-0 md:mx-5">
                 <div>
                   <h1 className="text-[30px] text-white font-regular">
-                    Welcome to shadow Labs
+                    Welcome to Endorphinx
                   </h1>
                   <p className="text-[14px] text-white font-light my-5">
-                    Fusce euismod nunc eget nisl ullamcorper, in tempus nisl
-                    pretium. Nunc nec nibh diam. Etiam bibendum eros ut urna
-                    tristique, eu maximus ligula tempus. Aliquam augue nisl,
-                    fermentum sit amet ultricies ac, sodales ac justo.
+                  Welcome to ENDORPHINX - Partner with us to elevate your gaming experience to the next level.
                   </p>
                   <p className="text-[14px] text-white font-light my-5">
-                    Vestibulum vulputate massa rutrum, pharetra neque id,
-                    posuere orci. Curabitur egestas enim eu risus imperdiet, sed
-                    sollicitudin nibh aliquet.
+                  At ENDORPHINX, we are committed to delivering the best in gaming services, combining innovation with top-quality development. Whether you're looking for immersive 2D and 3D games or cutting-edge experiences in AR and VR, we have you covered.
                   </p>
                   <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
                     <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
@@ -116,8 +112,11 @@ launching a new product or enhancing an existing one, we ensure that your React
 Native app is fast, reliable, and scalable. 
                   </p>
                     </div> */}
-                  <button className="border border-blue-600 text-white px-3 w-32 py-2 rounded-full hover:bg-[#3c66ee] hover:duration-150">
-                    Explore
+                   <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                    <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                    <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                      Explore
+                    </span>
                   </button>
                 </div>
               </div>
@@ -153,8 +152,11 @@ Native app is fast, reliable, and scalable.
                     improving outcomes.{" "}
                   </p>
 
-                  <button className="border border-blue-600 text-white px-3 w-32 py-2 rounded-full hover:bg-[#3c66ee] hover:duration-150">
-                    Explore
+                  <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                    <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                    <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                      Explore
+                    </span>
                   </button>
                 </div>
               </div>
@@ -163,15 +165,17 @@ Native app is fast, reliable, and scalable.
         </div>
       </div>
       {/* AR */}
-      <section className="bg-black" id="ar">
+      <section
+        id="ar"
+        className="bg-cover bg-center  flex items-center justify-center"
+        style={{ backgroundImage: `url(${game})` }}
+      >
+      {/* <section className="bg-black" id="ar"> */}
         <div className="container inset-0 flex items-center justify-center min-h-screen mx-auto max-w-7xl lg:px-8">
           <section className="">
             <div className="flex justify-center ">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 md:px-0 py-5">
-                <div className="">
-                  <img src={AR} alt="the content image" />
-                </div>
-                <div className="mx-0 md:mx-5">
+              <div className="mx-0 md:mx-5">
                   <div>
                     <h1 className="text-[30px] text-white font-regular">
                       AR Development
@@ -185,27 +189,34 @@ Native app is fast, reliable, and scalable.
                       cutting-edgesolutions for industries like gaming,
                       healthcare, and education.{" "}
                     </p>
-                    <button className="border border-blue-600 text-white px-3 w-32 py-2 rounded-full hover:bg-[#3c66ee] hover:duration-150">
+                    <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                    <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                    <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
                       Explore
-                    </button>
+                    </span>
+                  </button>
                   </div>
                 </div>
+                {/* <div className=""> */}
+                  {/* <img src={AR} alt="the content image" />
+                  <img src={appimg} alt="the content image" className="hidden" /> */}
+                  
+                {/* </div> */}
+                
               </div>
             </div>
           </section>
         </div>
       </section>
       {/* VR */}
-      <section
-        id="vr"
-        className="bg-cover bg-center  flex items-center justify-center"
-        style={{ backgroundImage: `url(${game})` }}
-      >
+      
+        <section className="bg-[#0C0E1A]" id="vr">
         <div className="container h-screen overflow-hidden mx-auto max-w-7xl lg:px-8">
           <div className="flex justify-center items-center h-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 md:px-3 lg:px-0 py-5">
               <div className="">
-                <img src={appimg} alt="the content image" className="hidden" />
+              <img src={AR} alt="the content image" />
+                
               </div>
 
               <div>
@@ -221,8 +232,11 @@ Native app is fast, reliable, and scalable.
                     leveraging the latest invirtual reality technology{" "}
                   </p>
 
-                  <button className="border border-blue-600 text-white px-3 w-32 py-2 rounded-full hover:bg-[#3c66ee] hover:duration-150">
-                    Explore
+                  <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                    <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                    <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                      Explore
+                    </span>
                   </button>
                 </div>
               </div>
@@ -253,8 +267,11 @@ Native app is fast, reliable, and scalable.
                     digital economy.
                   </p>
 
-                  <button className="border border-blue-600 text-white px-3 w-32 py-2 rounded-full hover:bg-[#3c66ee] hover:duration-150">
-                    Explore
+                  <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                    <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                    <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                      Explore
+                    </span>
                   </button>
                 </div>
               </div>
@@ -284,8 +301,11 @@ Native app is fast, reliable, and scalable.
                     ex ea commodo non habent claritatem insitamconsequat duis
                     autem facilisis at vero eros
                   </p>
-                  <button className="border border-blue-600 text-white px-3 w-32 py-2 rounded-full hover:bg-[#3c66ee] hover:duration-150">
-                    Say Hello
+                  <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                    <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                    <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                      Say Hello
+                    </span>
                   </button>
                 </div>
               </div>
