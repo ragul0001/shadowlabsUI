@@ -9,13 +9,12 @@ import Web from "../assests/background/web3.0-bg.jpg";
 import Webicon from "../assests/background/web3.0-icon.png";
 import Contactimg from "../assests/Menu-Icons/background-with-flat-contact-elements.png";
 import { Link } from "react-router-dom";
-
+import ReactPlayer from "react-player";
+import sampleVideo from "../assests/Videos/spark3.mp4";
 
 function Home() {
   return (
-    
     <div className="bg-[#0c0e1a]">
-
       {/* Welcome Pages */}
       <div
         id="welcome"
@@ -33,17 +32,25 @@ function Home() {
                     Welcome to Endorphinx
                   </h1>
                   <p className="text-[14px] text-white font-light my-5">
-                  Welcome to ENDORPHINX - Partner with us to elevate your gaming experience to the next level.
+                    Welcome to ENDORPHINX - Partner with us to elevate your
+                    gaming experience to the next level.
                   </p>
                   <p className="text-[14px] text-white font-light my-5">
-                  At ENDORPHINX, we are committed to delivering the best in gaming services, combining innovation with top-quality development. Whether you're looking for immersive 2D and 3D games or cutting-edge experiences in AR and VR, we have you covered.
+                    At ENDORPHINX, we are committed to delivering the best in
+                    gaming services, combining innovation with top-quality
+                    development. Whether you're looking for immersive 2D and 3D
+                    games or cutting-edge experiences in AR and VR, we have you
+                    covered.
                   </p>
-                <Link to="../explore"> <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
-                    <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                    <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
-                      Explore
-                    </span>
-                  </button></Link>
+                  <Link to="../explore">
+                    {" "}
+                    <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                      <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                      <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                        Explore
+                      </span>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -51,7 +58,7 @@ function Home() {
         </section>
       </div>
       {/* App Development */}
-      <section
+      {/* <section
         id="app"
         className="bg-cover bg-center min-h-screen flex items-center justify-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
@@ -73,48 +80,7 @@ function Home() {
                     IoT-enabled solutions to web apps using React Native, we
                     ensure quality, agility, and security in every project
                   </p>
-                  {/* <div>
-                    <h1 className="text-[30px] text-white font-regular">
-                  Android Development
-                  </h1>
-                  <p className="text-[16px] text-white font-light my-5 text-justify">
-                  With a decade of experience in Android development, our team excels at creatinghigh-performance apps tailored to your business needs. We use the latest technologies
-like Kotlin and Java to build apps that are intuitive, scalable, and optimized for a
-variety of devices. From idea to launch, we craft solutions that not only meet but
-exceed expectations.
-                  </p>
-                  <h1 className="text-[30px] text-white font-regular">
-                  iOS Development
-                  </h1>
-                  <p className="text-[16px] text-white font-light my-5 text-justify">
-                  Our iOS development team ensures your app is built with precision and high quality. With a deep understanding of Apple’s ecosystem, we create secure, feature-rich
-                  applications using Swift and Objective-C. Whether for iPhone, iPad, or Apple Watch, we deliver smooth, polished apps that align with the unique demands of iOS users
-                  </p>
-                  <h1 className="text-[30px] text-white font-regular">
-                  IoT Development
-                  </h1>
-                  <p className="text-[16px] text-white font-light my-5 text-justify">
-                  We provide innovative IoT solutions that seamlessly connect devices, sensors, andsystems. Our team builds secure, scalable IoT applications that integrate with a widerange of industries, from smart homes and wearables to industrial automation. Withour expertise, you can harness the full potential of IoT technology to drive efficiencyand innovation.
-                  </p>
-                  <h1 className="text-[30px] text-white font-regular">
-                  Flutter Development
-                  </h1>
-                  <p className="text-[16px] text-white font-light my-5 text-justify">
-                  Flutter is a key component of our cross-platform strategy, enabling us to develop apps
-for iOS and Android from a single codebase. Our expertise in Flutter ensures that
-your app is not only visually appealing but also efficient and responsive, offering a
-seamless experience across platforms.
-                  </p>
-                  <h1 className="text-[30px] text-white font-regular">
-                  React Native Development
-                  </h1>
-                  <p className="text-[16px] text-white font-light my-5 text-justify">
-                  Using React Native, we build mobile apps that combine the look and feel of native
-applications with the speed and efficiency of a unified codebase. Whether you're
-launching a new product or enhancing an existing one, we ensure that your React
-Native app is fast, reliable, and scalable. 
-                  </p>
-                    </div> */}
+                
                    <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
                     <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
                     <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
@@ -130,7 +96,71 @@ Native app is fast, reliable, and scalable.
             </div>
           </div>
         </div>
-      </section>
+      </section>  */}
+      <div className="bg-[#0c0e1a] relative">
+         <div className="  block lg:hidden w-full min-w-full min-h-full max-w-none">
+            <ReactPlayer  
+              url={sampleVideo}
+              width="100%"
+              height="100%"
+              playing
+              loop
+              muted
+            />
+          </div>
+        <header className="relative flex justify-end items-center lg:h-screen mb-12 overflow-hidden">
+          {/* Content hide and show videos */}
+          <div
+            className={`container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 `}
+          >
+            <div className="flex justify-center items-center h-full">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 md:px-3 lg:px-0 py-5">
+                <div>
+                  <div>
+                    <h1 className="text-[30px] text-white font-regular">
+                      App Development
+                    </h1>
+                    <p className="text-[14px] text-white font-light my-5 text-justify">
+                      We specialize in building cutting-edge applications across
+                      multiple platforms. Our experience spans over years of
+                      developing robust, scalable, and innovative mobile apps.
+                      Whether for iOS, Android, or Flutter, we focus on
+                      delivering seamless user experiences and top-notch
+                      performance. From IoT-enabled solutions to web apps using
+                      React Native, we ensure quality, agility, and security in
+                      every project
+                    </p>
+
+                    <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                      <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                      <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                        Explore
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
+                <div className="">
+                  <img src={appimg} alt="the content image" className="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Background Video */}
+
+          <div className="absolute z-10 hidden lg:block w-screen min-w-full min-h-full max-w-none">
+            <ReactPlayer  
+              url={sampleVideo}
+              width="100%"
+              height="100%"
+              playing
+              loop
+              muted
+            />
+          </div>
+        </header>
+      </div>
 
       {/* Gamifications */}
       <div className="bg-[#0C0E1A]" id="gamification">
@@ -173,12 +203,12 @@ Native app is fast, reliable, and scalable.
         className="bg-cover bg-center  flex items-center justify-center"
         style={{ backgroundImage: `url(${game})` }}
       >
-      {/* <section className="bg-black" id="ar"> */}
+        {/* <section className="bg-black" id="ar"> */}
         <div className="container inset-0 flex items-center justify-center min-h-screen mx-auto max-w-7xl lg:px-8">
           <section className="">
             <div className="flex justify-center ">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 md:px-0 py-5">
-              <div className="mx-0 md:mx-5">
+                <div className="mx-0 md:mx-5">
                   <div>
                     <h1 className="text-[30px] text-white font-regular">
                       AR Development
@@ -193,33 +223,31 @@ Native app is fast, reliable, and scalable.
                       healthcare, and education.{" "}
                     </p>
                     <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
-                    <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                    <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
-                      Explore
-                    </span>
-                  </button>
+                      <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                      <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                        Explore
+                      </span>
+                    </button>
                   </div>
                 </div>
                 {/* <div className=""> */}
-                  {/* <img src={AR} alt="the content image" />
+                {/* <img src={AR} alt="the content image" />
                   <img src={appimg} alt="the content image" className="hidden" /> */}
-                  
+
                 {/* </div> */}
-                
               </div>
             </div>
           </section>
         </div>
       </section>
       {/* VR */}
-      
-        <section className="bg-[#0C0E1A]" id="vr">
+
+      <section className="bg-[#0C0E1A]" id="vr">
         <div className="container h-screen overflow-hidden mx-auto max-w-7xl lg:px-8">
           <div className="flex justify-center items-center h-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 md:px-3 lg:px-0 py-5">
               <div className="">
-              <img src={AR} alt="the content image" />
-                
+                <img src={AR} alt="the content image" />
               </div>
 
               <div>
@@ -351,7 +379,6 @@ Native app is fast, reliable, and scalable.
         </section>
       </div>
     </div>
-  
   );
 }
 
