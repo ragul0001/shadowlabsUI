@@ -97,7 +97,7 @@ function Home() {
           </div>
         </div>
       </section>  */}
-      <div className="bg-[#0c0e1a] relative">
+      <div className="bg-[#0c0e1a] relative"  id="app">
          <div className="  block lg:hidden w-full min-w-full min-h-full max-w-none">
             <ReactPlayer  
               url={sampleVideo}
