@@ -58,7 +58,7 @@ function Home() {
         </section>
       </div>
       {/* App Development */}
-      {/* <section
+       <section
         id="app"
         className="bg-cover bg-center min-h-screen flex items-center justify-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
@@ -96,8 +96,11 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>  */}
-      <div className="bg-[#0c0e1a] relative"  id="app">
+      </section>  
+
+
+      {/* Backgrouond video with content */}
+      {/* <div className="bg-[#0c0e1a] relative"  id="app">
          <div className="  block lg:hidden w-full min-w-full min-h-full max-w-none">
             <ReactPlayer  
               url={sampleVideo}
@@ -109,7 +112,7 @@ function Home() {
             />
           </div>
         <header className="relative flex justify-end items-center lg:h-screen mb-12 overflow-hidden">
-          {/* Content hide and show videos */}
+      
           <div
             className={`container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 `}
           >
@@ -147,7 +150,7 @@ function Home() {
             </div>
           </div>
 
-          {/* Background Video */}
+
 
           <div className="absolute z-10 hidden lg:block w-screen min-w-full min-h-full max-w-none">
             <ReactPlayer  
@@ -160,7 +163,7 @@ function Home() {
             />
           </div>
         </header>
-      </div>
+      </div> */}
 
       {/* Gamifications */}
       <div className="bg-[#0C0E1A]" id="gamification">
