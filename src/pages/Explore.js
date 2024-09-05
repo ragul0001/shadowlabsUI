@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ParticlesComponent from '../components/features/ParticlesComponent'
 import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/sample.mp4";
 
@@ -15,7 +16,8 @@ function Explore() {
 
   return (
     <div className="bg-[#0c0e1a] relative">
-      <header className="relative flex justify-end items-center h-screen mb-12 overflow-hidden">
+            <ParticlesComponent id="particles"/>
+      <header className="relative flex justify-end items-center h-screen  overflow-hidden">
         {/* Content hide and show videos */}
         <div
           className={`container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 ${
@@ -46,7 +48,7 @@ function Explore() {
                   animation for all projects at the most cost effective agency
                   rates available.
                 </p>
-                <div className="grid grid-cols-4 gap-4 mt-10">
+                {/* <div className="grid grid-cols-4 gap-4 mt-10">
                   <img
                     src="https://new.spark-lab.co.uk/img/f58442e0-3f06-4f74-86d1-0de0d74fec91/samsung-logo.png"
                     className="w-20 h-20 border p-4 bg-white border-blue-500 rounded-sm shadow-2xl"
@@ -63,14 +65,14 @@ function Explore() {
                     src="https://new.spark-lab.co.uk/img/f6759832-bb01-4903-ac0c-03b4a0b43deb/accora.png"
                     className="w-20 h-20 border p-4 bg-white border-blue-500 rounded-sm shadow-2xl"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
 
         {/* Background Video */}
-        {!showVideo && (
+        {/* {!showVideo && (
           <div className="absolute z-10 w-screen min-w-full min-h-full max-w-none">
             <ReactPlayer
               url={sampleVideo}
@@ -81,10 +83,10 @@ function Explore() {
               muted
             />
           </div>
-        )}
+        )} */}
 
         {/* Fullscreen Video */}
-        {showVideo && (
+        {/* {showVideo && (
           <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center">
             <button
               onClick={handleCloseVideo}
@@ -101,7 +103,7 @@ function Explore() {
               />
             </div>
           </div>
-        )}
+        )} */}
       </header>
     </div>
   );
