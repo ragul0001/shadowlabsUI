@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ParticlesComponent from '../components/features/ParticlesComponent'
+import ParticlesComponent from "../components/features/ParticlesComponent";
 import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/sample.mp4";
 
@@ -16,43 +16,53 @@ function Explore() {
 
   return (
     <div className="bg-[#0c0e1a] relative">
-            <ParticlesComponent id="particles"/>
-      <header className="relative flex justify-end items-center h-screen  overflow-hidden">
+      <ParticlesComponent id="particles" />
+      <header className="relative flex justify-end  h-screen  overflow-hidden">
         {/* Content hide and show videos */}
         <div
           className={`container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 ${
-            showVideo ? "-translate-x-full opacity-0 pointer-events-none" : "translate-x-0 opacity-100"
+            showVideo
+              ? "-translate-x-full opacity-0 pointer-events-none"
+              : "translate-x-0 opacity-100"
           }`}
         >
           <div className="flex justify-end basis-6/12">
             <div className="p-4">
               <div className="flex justify-end gap-3">
-                  <button
-                    onClick={handleShowVideo}
-                    className="border px-4 border-white hover:bg-blue-700 rounded-full py-3"
-                  >
-                    Show Videos
-                  </button>
+                <button
+                  onClick={handleShowVideo}
+                  className="border px-4 border-white hover:bg-blue-700 rounded-full py-3"
+                >
+                  Show Videos
+                </button>
               </div>
               <div className="relative my-10">
-  <div className="absolute inset-0 bg-[#141c30] opacity-70 z-[-1]"></div>
-  <div className="relative p-3 bg-transparent">
-    <h1 className="text-[30px] font-semibold">CGI Creations</h1>
-    <p className="font-thin">
-      The UK's leading CGI and Animation agency.
-    </p>
-    <p className="mt-10 text-justify w-96">
-      Spark's CGI studio uses the latest cinematic detailed 3D software to help create visually stunning environments, CGI products, and character animations across all sectors. We deliver exceptional detail and ultra realism for our clients. Our talented team deliver exceptional quality CGI and animation for all projects at the most cost effective agency rates available.
-    </p>
-    {/* <div className="grid grid-cols-4 gap-4 mt-10">
+                <div className="absolute inset-0 bg-[#141c30] opacity-70 z-[-1]"></div>
+                <div className="relative p-3 bg-transparent">
+                  <h1 className="text-[30px] font-semibold">Welcome to Endorphinx</h1>
+                  <p className="mt-10 text-justify w-[600px]">
+                  At ENDORPHINX, we excel in creating visually captivating 2D and 3D games that transform fitness into an engaging and enjoyable experience. Our expertise in developing lifelike AR and VR experiences ensures that we push the boundaries of what gaming can achieve, merging the virtual world with fitness routines to create immersive environments that motivate and inspire users.
+                  </p>
+                  <p className="mt-10 text-justify w-[600px]">
+                  Our advanced technology integration goes beyond gaming, as we seamlessly connect fitness devices and IoT systems to enhance the user experience. Whether it's smartwatches, fitness trackers, or specialized equipment, our games are designed to work flawlessly across all devices, making workouts both fun and effective.
+                  </p>
+                  <p className="mt-10 text-justify w-[600px]">
+                  In the evolving world of Web 3, ENDORPHINX stands at the forefront, bringing gaming ideas to life through Blockchain and NFT innovations. Our blockchain-based games and NFT integrations open up new possibilities in decentralized gaming, offering unique and secure experiences for users.
+                  </p>
+                  <p className="mt-10 text-justify w-[600px]">
+                  Our commitment to excellence extends to app development as well. We craft robust and scalable applications across platforms, ensuring that whether it's for iOS, Android, or cross-platform development using Flutter or React Native, the result is always a top-notch, user-friendly product.
+                  </p>
+                  <p className="mt-10 text-justify w-[600px]">
+                  From game development to app design, AR/VR solutions, IoT connectivity, and Web 3 services, ENDORPHINX is dedicated to delivering seamless and engaging experiences that redefine the gaming and fitness landscape.
+                  </p>
+                  {/* <div className="grid grid-cols-4 gap-4 mt-10">
       <img src="https://new.spark-lab.co.uk/img/f58442e0-3f06-4f74-86d1-0de0d74fec91/samsung-logo.png" className="w-20 h-20 border p-4 bg-white border-blue-500 rounded-sm shadow-2xl" />
       <img src="https://new.spark-lab.co.uk/img/20a300b8-7bf6-4cdc-b67a-c01ed799e2ab/o2logo.png" className="w-20 h-20 border p-4 bg-white border-blue-500 rounded-sm shadow-2xl" />
       <img src="https://new.spark-lab.co.uk/img/1ba68a65-9c28-41b3-9539-c72c77709da0/porsche.png" className="w-20 h-20 border p-4 bg-white border-blue-500 rounded-sm shadow-2xl" />
       <img src="https://new.spark-lab.co.uk/img/f6759832-bb01-4903-ac0c-03b4a0b43deb/accora.png" className="w-20 h-20 border p-4 bg-white border-blue-500 rounded-sm shadow-2xl" />
     </div> */}
-  </div>
-</div>
-
+                </div>
+              </div>
             </div>
           </div>
         </div>
