@@ -17,7 +17,7 @@ function Explore() {
   return (
     <div className="bg-[#0c0e1a] relative">
       <ParticlesComponent id="particles" />
-      <header className="relative flex justify-end  h-screen  overflow-hidden">
+      <header className="relative flex justify-end  overflow-hidden">
         {/* Content hide and show videos */}
         <div
           className={`container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 ${
@@ -38,7 +38,7 @@ function Explore() {
               </div>
               <div className="relative my-10">
                 <div className="absolute inset-0 bg-[#141c30] opacity-70 z-[-1]"></div>
-                <div className="relative p-3 bg-transparent">
+                <div className="relative p-8 bg-transparent">
                   <h1 className="text-[30px] font-semibold">Welcome to Endorphinx</h1>
                   <p className="mt-10 text-justify w-[600px]">
                   At ENDORPHINX, we excel in creating visually captivating 2D and 3D games that transform fitness into an engaging and enjoyable experience. Our expertise in developing lifelike AR and VR experiences ensures that we push the boundaries of what gaming can achieve, merging the virtual world with fitness routines to create immersive environments that motivate and inspire users.
@@ -82,7 +82,7 @@ function Explore() {
         )} */}
 
         {/*2 Fullscreen Video */}
-        {/* {showVideo && (
+        {showVideo && (
           <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center">
             <button
               onClick={handleCloseVideo}
@@ -90,16 +90,16 @@ function Explore() {
             >
               Close
             </button>
-            <div className="w-screen min-w-full max-w-none">
+            {/* <div className="w-screen min-w-full max-w-none">
               <ReactPlayer
                 url={sampleVideo}
                 width="100%"
                 height="100%"
                 playing
               />
-            </div>
+            </div> */}
           </div>
-        )} */}
+        )}
       </header>
     </div>
   );
