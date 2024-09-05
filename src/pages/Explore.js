@@ -27,15 +27,15 @@ function Explore() {
           <div className="flex justify-end basis-6/12">
             <div className="p-4">
               <div className="flex justify-end gap-3">
-                  {/* <button
+                  <button
                     onClick={handleShowVideo}
                     className="border px-4 border-white hover:bg-blue-700 rounded-full py-3"
                   >
                     Show Videos
-                  </button> */}
+                  </button>
               </div>
               <div className="relative my-10">
-  <div className="absolute inset-0 bg-black opacity-70 z-[-1]"></div>
+  <div className="absolute inset-0 bg-[#141c30] opacity-70 z-[-1]"></div>
   <div className="relative p-3 bg-transparent">
     <h1 className="text-[30px] font-semibold">CGI Creations</h1>
     <p className="font-thin">
