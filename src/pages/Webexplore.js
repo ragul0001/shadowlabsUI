@@ -17,7 +17,7 @@ function Webexplore() {
             <div className="p-4">
               <div className="relative my-10">
                 <div className="absolute inset-0 bg-[#141c30] opacity-70  "></div>
-                <div className="relative p-8 bg-transparent h-[700px] md:h-[700px] lg:h-[600px] overflow-y-scroll">
+                <div className="relative p-8 bg-transparent">
                   <h1 className="text-[30px] font-semibold">Web 3.0</h1>
                   <div className="mt-10">
                     <h1 className="text-[20px] font-semibold">NFT Development</h1>
