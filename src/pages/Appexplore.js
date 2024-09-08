@@ -2,26 +2,54 @@ import React, { useState } from "react";
 import ParticlesComponent from "../components/features/ParticlesComponent";
 import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/sample.mp4";
+import gamification from "../assests/background/gamification.jpg";
+
+
+
 
 function Appexplore() {
 
+  const [showVideo, setShowVideo] = useState(false);
+
+  const handleShowVideo = () => {
+    setShowVideo(true);
+  };
+
+  const handleCloseVideo = () => {
+    setShowVideo(false);
+  };
 
   return (
-    <div className="bg-[#0c0e1a] relative h-screen">
+    <div className="bg-[#0c0e1a] relative ">
       <ParticlesComponent id="particles" />
       <header className="relative flex justify-end  overflow-hidden">
-        <div
-          className={`container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 `}
+      <div
+          className={`container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 ${
+            showVideo
+              ? "-translate-x-full opacity-0 pointer-events-none"
+              : "translate-x-0 opacity-100"
+          }`}
         >
-          <div className="flex justify-end basis-6/12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
+          <div>
+                 <img src={gamification} alt="the gamfications" className=""/>
+                </div>
             <div className="p-4">
+            <div className="flex justify-end gap-3">
+                <button
+                  onClick={handleShowVideo}
+                  className="border px-4 border-white hover:bg-blue-700 rounded-full py-3"
+                >
+                  Show Videos
+                </button>
+              </div>
               <div className="relative my-10">
-                <div className="absolute inset-0 bg-[#141c30] opacity-70  "></div>
-                <div className="relative p-8 bg-transparent h-[700px] md:h-[700px] lg:h-[600px] overflow-y-scroll">
+                <div className="absolute inset-0 bg-[#12182a]   "></div>
+                <div className="relative p-8 bg-transparent h-[700px] md:h-[700px] lg:h-[500px] overflow-y-scroll">
                   <h1 className="text-[30px] font-semibold">App Development</h1>
                   <div className="mt-10">
                     <h1 className="text-[20px] font-semibold">Android Development</h1>
-                  <p className="mt-4 text-justify  w-auto lg:w-[600px]">
+                  <p className="mt-4 text-justify  ">
                   With a decade of experience in Android development, our team excels at creating
 high-performance apps tailored to your business needs. We use the latest technologies
 like Kotlin and Java to build apps that are intuitive, scalable, and optimized for a
@@ -32,7 +60,7 @@ exceed expectations.
                   </div>
                   <div className="mt-10">
                     <h1 className="text-[20px] font-semibold">IOS Development</h1>
-                  <p className="mt-4 text-justify  w-auto lg:w-[600px]">
+                  <p className="mt-4 text-justify  ">
                   Our iOS development team ensures your app is built with precision and high quality.
 With a deep understanding of Apple’s ecosystem, we create secure, feature-rich
 applications using Swift and Objective-C. Whether for iPhone, iPad, or Apple Watch,
@@ -41,7 +69,7 @@ we deliver smooth, polished apps that align with the unique demands of iOS users
                   </div>
                   <div className="mt-10">
                     <h1 className="text-[20px] font-semibold">IoT Development</h1>
-                  <p className="mt-4 text-justify  w-auto lg:w-[600px]">
+                  <p className="mt-4 text-justify ">
                   We provide innovative IoT solutions that seamlessly connect devices, sensors, and
 systems. Our team builds secure, scalable IoT applications that integrate with a wide
 range of industries, from smart homes and wearables to industrial automation. With
@@ -52,7 +80,7 @@ and innovation.
                   </div>
                   <div className="mt-10">
                     <h1 className="text-[20px] font-semibold">Flutter Development</h1>
-                  <p className="mt-4 text-justify  w-auto lg:w-[600px]">
+                  <p className="mt-4 text-justify  ">
                   Flutter is a key component of our cross-platform strategy, enabling us to develop apps
 for iOS and Android from a single codebase. Our expertise in Flutter ensures that
 your app is not only visually appealing but also efficient and responsive, offering a
@@ -62,7 +90,7 @@ seamless experience across platforms.
                   </div>
                   <div className="mt-10">
                     <h1 className="text-[20px] font-semibold">React Native Development</h1>
-                  <p className="mt-4 text-justify  w-auto lg:w-[600px]">
+                  <p className="mt-4 text-justify ">
                   Using React Native, we build mobile apps that combine the look and feel of native
 applications with the speed and efficiency of a unified codebase. Whether you're
 launching a new product or enhancing an existing one, we ensure that your React
@@ -75,6 +103,25 @@ Native app is fast, reliable, and scalable.
             </div>
           </div>
         </div>
+         {/*2 Fullscreen Video */}
+         {showVideo && (
+          <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center">
+            <button
+              onClick={handleCloseVideo}
+              className="absolute top-10 right-10 bg-red-600 text-white p-3 rounded-full z-50"
+            >
+              Close
+            </button>
+            {/* <div className="w-screen min-w-full max-w-none">
+              <ReactPlayer
+                url={sampleVideo}
+                width="100%"
+                height="100%"
+                playing
+              />
+            </div> */}
+          </div>
+        )}
       </header>
     </div>
   );

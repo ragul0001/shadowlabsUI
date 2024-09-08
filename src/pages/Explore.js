@@ -46,7 +46,7 @@ function Explore() {
                 <div>
 
                 </div>
-                <div className="absolute inset-0 bg-[#141c30] opacity-70  "></div>
+                <div className="absolute inset-0 bg-[#12182a]   "></div>
                 <div className="relative p-8 bg-transparent md:h-[700px] lg:h-[500px] overflow-y-scroll">
                   <h1 className="text-[30px] font-semibold">Welcome to Endorphinx</h1>
                   <p className="mt-10 text-justify  ">
