@@ -7,3 +7,24 @@
 body {
     @apply font-poppins;
   }
+
+  /* Add this to your global CSS file */
+::-webkit-scrollbar {
+  width: 12px; /* Change the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4A5568; /* Scrollbar thumb color */
+  border-radius: 6px; /* Rounded corners of the scrollbar thumb */
+ /* Creates space around the thumb */
+}
+
+/* Firefox-specific scrollbar styles */
+.scrollbar {
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: #4A5568 #f0f0f0; /* thumb color, track color */
+}

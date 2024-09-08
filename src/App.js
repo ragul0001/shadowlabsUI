@@ -6,6 +6,10 @@ import Rough from './pages/Rough'
 import Explore from './pages/Explore';
 import Particles from './pages/Particles';
 import ARexplore from './pages/ARexplore';
+import Appexplore from './pages/Appexplore';
+import VRexplore from './pages/VRexplore';
+import Webexplore from './pages/Webexplore'
+
 
 
 function App() {
@@ -17,7 +21,10 @@ function App() {
           <Route path="/explore" element={<Explore/>}/>
           <Route path="/route" element={<Rough/>}/>
           <Route path="/particle" element={<Particles/>}/>
+          <Route path="/app" element={<Appexplore/>}/>
           <Route path="/ar" element={<ARexplore/>}/>
+          <Route path="/vr" element={<VRexplore/>}/>
+          <Route path="/web" element={<Webexplore/>}/>
         </Routes>
       </Layout>
     </BrowserRouter>

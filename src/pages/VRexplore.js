@@ -3,7 +3,7 @@ import ParticlesComponent from "../components/features/ParticlesComponent";
 import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/sample.mp4";
 
-function ARexplore() {
+function VRexplore() {
 
 
   return (
@@ -19,13 +19,12 @@ function ARexplore() {
                 <div className="absolute inset-0 bg-[#141c30] opacity-70  "></div>
                 <div className="relative p-8 bg-transparent ">
                   <div className="mt-10">
-                    <h1 className="text-[20px] font-semibold">AR Development</h1>
+                    <h1 className="text-[20px] font-semibold">VR Development</h1>
                   <p className="mt-4 text-justify  w-auto lg:w-[600px]">
-                  We specialize in creating augmented reality experiences that enhance how users
-interact with their surroundings. From retail and marketing to education and
-entertainment, our AR applications provide engaging and interactive experiences that
-captivate users and drive engagement.
-
+                  Our VR development team creates fully immersive, realistic virtual environments that
+transport users to entirely new worlds. Whether for gaming, training, or virtual tours,
+we deliver high-quality VR solutions that engage and inspire, leveraging the latest in
+virtual reality technology.
 
                   </p>
                   </div>
@@ -40,4 +39,4 @@ captivate users and drive engagement.
   );
 }
 
-export default ARexplore;
+export default VRexplore;
