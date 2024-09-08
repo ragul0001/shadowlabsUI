@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import ParticlesComponent from "../components/features/ParticlesComponent";
 import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/sample.mp4";
+import gamification from "../assests/background/gamification.jpg";
+
+
 
 function Explore() {
   const [showVideo, setShowVideo] = useState(false);
@@ -26,7 +29,10 @@ function Explore() {
               : "translate-x-0 opacity-100"
           }`}
         >
-          <div className="flex justify-end basis-6/12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
+              <div>
+                 <img src={gamification} alt="the gamfications" className=""/>
+                </div>
             <div className="p-4">
               <div className="flex justify-end gap-3">
                 <button
@@ -36,23 +42,26 @@ function Explore() {
                   Show Videos
                 </button>
               </div>
-              <div className="relative my-10">
+              <div className="relative  my-10">
+                <div>
+
+                </div>
                 <div className="absolute inset-0 bg-[#141c30] opacity-70  "></div>
                 <div className="relative p-8 bg-transparent md:h-[700px] lg:h-[500px] overflow-y-scroll">
                   <h1 className="text-[30px] font-semibold">Welcome to Endorphinx</h1>
-                  <p className="mt-10 text-justify  w-auto lg:w-[600px]">
+                  <p className="mt-10 text-justify  ">
                   At ENDORPHINX, we excel in creating visually captivating 2D and 3D games that transform fitness into an engaging and enjoyable experience. Our expertise in developing lifelike AR and VR experiences ensures that we push the boundaries of what gaming can achieve, merging the virtual world with fitness routines to create immersive environments that motivate and inspire users.
                   </p>
-                  <p className="mt-10 text-justify w-auto lg:w-[600px]">
+                  <p className="mt-10 text-justify ">
                   Our advanced technology integration goes beyond gaming, as we seamlessly connect fitness devices and IoT systems to enhance the user experience. Whether it's smartwatches, fitness trackers, or specialized equipment, our games are designed to work flawlessly across all devices, making workouts both fun and effective.
                   </p>
-                  <p className="mt-10 text-justify w-auto lg:w-[600px]">
+                  <p className="mt-10 text-justify ">
                   In the evolving world of Web 3, ENDORPHINX stands at the forefront, bringing gaming ideas to life through Blockchain and NFT innovations. Our blockchain-based games and NFT integrations open up new possibilities in decentralized gaming, offering unique and secure experiences for users.
                   </p>
-                  <p className="mt-10 text-justify w-auto lg:w-[600px]">
+                  <p className="mt-10 text-justify">
                   Our commitment to excellence extends to app development as well. We craft robust and scalable applications across platforms, ensuring that whether it's for iOS, Android, or cross-platform development using Flutter or React Native, the result is always a top-notch, user-friendly product.
                   </p>
-                  <p className="mt-10 text-justify w-auto lg:w-[600px]">
+                  <p className="mt-10 text-justify">
                   From game development to app design, AR/VR solutions, IoT connectivity, and Web 3 services, ENDORPHINX is dedicated to delivering seamless and engaging experiences that redefine the gaming and fitness landscape.
                   </p>
                   {/* <div className="grid grid-cols-4 gap-4 mt-10">
