@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ParticlesComponent from "../components/features/ParticlesComponent";
 import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/sample.mp4";
-import gamification from "../assests/background/gamification.jpg";
+import gamification from "../assests/InnerPage/ban-welcome.jpg";
 
 
 
@@ -31,15 +31,18 @@ function Explore() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
               <div>
-                 <img src={gamification} alt="the gamfications" className=""/>
+                 <img src={gamification} alt="the gamfications" className="rounded-xl"/>
                 </div>
             <div className="p-4">
               <div className="flex justify-end gap-3">
-                <button
+              <button
                   onClick={handleShowVideo}
-                  className="border px-4 border-white hover:bg-blue-700 rounded-full py-3"
+                  class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
                 >
-                  Show Videos
+                  <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                  <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                    Show Videos
+                  </span>
                 </button>
               </div>
               <div className="relative  my-10">
@@ -94,19 +97,22 @@ function Explore() {
         {showVideo && (
           <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center">
             <button
-              onClick={handleCloseVideo}
-              className="absolute top-10 right-10 bg-red-600 text-white p-3 rounded-full z-50"
-            >
-              Close
-            </button>
-            {/* <div className="w-screen min-w-full max-w-none">
+                  onClick={handleCloseVideo}
+                  class="my-3 absolute top-10 right-10 group  min-h-[50px] w-40 overflow-hidden border border-[#d44219]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-red-700 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-red-700 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
+                >
+                  <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-red-700 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-red-700 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                  <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                    Close
+                  </span>
+                </button>
+            <div className="w-screen min-w-full max-w-none">
               <ReactPlayer
                 url={sampleVideo}
                 width="100%"
                 height="100%"
                 playing
               />
-            </div> */}
+            </div>
           </div>
         )}
       </header>
