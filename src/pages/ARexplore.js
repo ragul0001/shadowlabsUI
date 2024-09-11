@@ -7,10 +7,24 @@ import sampleVideo2 from "../assests/Videos/video2.mp4";
 import sampleVideo3 from "../assests/Videos/video3.mp4";
 import sampleVideo4 from "../assests/Videos/video4.mp4";
 import gamification from "../assests/InnerPage/ban-ar.jpg";
-import gameThumb1 from "../assests/InnerPage/ar-thumb1.png";
-import gameThumb2 from "../assests/InnerPage/ar-thumb2.png";
-import gameThumb3 from "../assests/InnerPage/ar-thumb3.png";
-import gameThumb4 from "../assests/InnerPage/ar-thumb4.png";
+// import gameThumb1 from "../assests/InnerPage/ar-thumb1.png";
+// import gameThumb2 from "../assests/InnerPage/ar-thumb2.png";
+// import gameThumb3 from "../assests/InnerPage/ar-thumb3.png";
+// import gameThumb4 from "../assests/InnerPage/ar-thumb4.png";
+
+import gameThumb1 from "../assests/InnerPage/thum-big1.png";
+import gameThumb2 from "../assests/InnerPage/thum-big2.png";
+import gameThumb3 from "../assests/InnerPage/thum-big3.png";
+import gameThumb4 from "../assests/InnerPage/thum-big4.png";
+import gameThumb5 from "../assests/InnerPage/thum-big5.png";
+import gameThumb6 from "../assests/InnerPage/thum-big6.png";
+
+
+
+
+
+
+
 
 function ARexplore() {
   const [showVideo, setShowVideo] = useState(false);
@@ -31,7 +45,7 @@ function ARexplore() {
     setCurrentMedia({ type: "video", src: videoSrc });
   };
   return (
-    <div className="bg-[#0c0e1a] relative h-auto md:h-[670px]">
+    <div className="bg-[#0c0e1a] relative ">
       <ParticlesComponent id="particles" />
       <header className="relative flex justify-end  overflow-hidden ">
         <div
@@ -41,17 +55,32 @@ function ARexplore() {
               : "translate-x-0 opacity-100"
           }`}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
+          <div className="flex justify-end gap-3">
+            <button
+              onClick={handleShowVideo}
+              class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
+            >
+              <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+              <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                Show Videos
+              </span>
+            </button>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2 items-center">
             {/* images and  videos displayed */}
             {/* Image or Video Display */}
             <div>
               {currentMedia.type === "image" ? (
-                <img src={currentMedia.src} alt="gamification" className="rounded-xl" />
+                <img
+                  src={currentMedia.src}
+                  alt="gamification"
+                  className="rounded-xl"
+                />
               ) : (
                 <ReactPlayer
                   url={currentMedia.src}
                   playing
-            
+                  controls
                   width="100%"
                   height="100%"
                   className="video-class"
@@ -59,20 +88,9 @@ function ARexplore() {
               )}
             </div>
             <div className="p-4">
-              <div className="flex justify-end gap-3">
-                <button
-                  onClick={handleShowVideo}
-                  class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
-                >
-                  <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                  <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
-                    Show Videos
-                  </span>
-                </button>
-              </div>
               <div className="relative my-10">
                 <div className="absolute inset-0 bg-[#12182a]   "></div>
-                <div className="relative p-8 bg-transparent ">
+                <div className="relative p-8 bg-transparent lg:h-[370px] ">
                   <div className="mt-10">
                     <h1 className="text-[20px] font-semibold">
                       AR Development
@@ -87,34 +105,47 @@ function ARexplore() {
                   </div>
                 </div>
               </div>
-              {/* inner thumbnail pictures */}
-              {/* Thumbnails */}
-              <div className="relative grid grid-cols-2 md:grid-cols-4 gap-2 my-10 bg-transparent">
-                <img
-                  src={gameThumb1}
-                  alt="Thumbnail 1"
-                  className="cursor-pointer"
-                  onClick={() => handleThumbnailClick(sampleVideo1)}
-                />
-                <img
-                  src={gameThumb2}
-                  alt="Thumbnail 2"
-                  className="cursor-pointer"
-                  onClick={() => handleThumbnailClick(sampleVideo2)}
-                />
-                <img
-                  src={gameThumb3}
-                  alt="Thumbnail 3"
-                  className="cursor-pointer"
-                  onClick={() => handleThumbnailClick(sampleVideo3)}
-                />
-                <img
-                  src={gameThumb4}
-                  alt="Thumbnail 4"
-                  className="cursor-pointer"
-                  onClick={() => handleThumbnailClick(sampleVideo4)}
-                />
-              </div>
+            </div>
+          </div>
+                    {/* Thumbnails */}
+                    <div className="">
+            <div className="grid  grid-cols-3 md:grid-cols-6 gap-2 px-5 my-2 md:my-10 bg-transparent">
+              <img
+                src={gameThumb1}
+                alt="Thumbnail 1"
+                className="cursor-pointer"
+                onClick={() => handleThumbnailClick(sampleVideo1)}
+              />
+              <img
+                src={gameThumb2}
+                alt="Thumbnail 2"
+                className="cursor-pointer"
+                onClick={() => handleThumbnailClick(sampleVideo2)}
+              />
+              <img
+                src={gameThumb3}
+                alt="Thumbnail 3"
+                className="cursor-pointer"
+                onClick={() => handleThumbnailClick(sampleVideo3)}
+              />
+              <img
+                src={gameThumb4}
+                alt="Thumbnail 4"
+                className="cursor-pointer"
+                onClick={() => handleThumbnailClick(sampleVideo4)}
+              />
+              <img
+                src={gameThumb5}
+                alt="Thumbnail 5"
+                className="cursor-pointer"
+                onClick={() => handleThumbnailClick(sampleVideo4)}
+              />
+              <img
+                src={gameThumb6}
+                alt="Thumbnail 4"
+                className="cursor-pointer"
+                onClick={() => handleThumbnailClick(sampleVideo4)}
+              />
             </div>
           </div>
         </div>
