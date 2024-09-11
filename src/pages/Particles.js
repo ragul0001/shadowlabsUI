@@ -7,10 +7,12 @@ import sampleVideo2 from "../assests/Videos/video2.mp4";
 import sampleVideo3 from "../assests/Videos/video3.mp4";
 import sampleVideo4 from "../assests/Videos/video4.mp4";
 import gamification from "../assests/InnerPage/ban-gamification.jpg";
-import gameThumb1 from "../assests/InnerPage/game-thumb1.png";
-import gameThumb2 from "../assests/InnerPage/game-thumb2.png";
-import gameThumb3 from "../assests/InnerPage/game-thumb3.png";
-import gameThumb4 from "../assests/InnerPage/game-thumb4.png";
+import gameThumb1 from "../assests/InnerPage/thum-big1.png";
+import gameThumb2 from "../assests/InnerPage/thum-big2.png";
+import gameThumb3 from "../assests/InnerPage/thum-big3.png";
+import gameThumb4 from "../assests/InnerPage/thum-big4.png";
+import gameThumb5 from "../assests/InnerPage/thum-big5.png";
+import gameThumb6 from "../assests/InnerPage/thum-big6.png";
 
 function Particles() {
   const [showVideo, setShowVideo] = useState(false);
@@ -45,15 +47,18 @@ function Particles() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
             <div>
               {currentMedia.type === "image" ? (
-                <img src={currentMedia.src} alt="gamification" className="rounded-xl" />
+                <img
+                  src={currentMedia.src}
+                  alt="gamification"
+                  className="rounded-xl"
+                />
               ) : (
                 <ReactPlayer
                   url={currentMedia.src}
                   playing
-               
                   width="100%"
                   height="100%"
-                  className="video-class"
+                  className="video-class  "
                 />
               )}
             </div>
@@ -71,7 +76,7 @@ function Particles() {
               </div>
               <div className="relative my-10">
                 <div className="absolute inset-0 bg-[#12182a]  "></div>
-                <div className="relative p-8 bg-transparent h-[700px] md:h-[700px] lg:h-[340px] overflow-y-scroll">
+                <div className="relative p-8 bg-transparent h-[400px] md:h-[700px] lg:h-[290px] overflow-y-scroll">
                   <h1 className="text-[30px] font-semibold">Gamifications</h1>
                   <div className="mt-10">
                     <h1 className="text-[20px] font-semibold">
@@ -114,33 +119,47 @@ function Particles() {
                   </div>
                 </div>
               </div>
-              {/* Thumbnails */}
-              <div className="relative grid  grid-cols-2 md:grid-cols-4 gap-2 my-10 bg-transparent">
-                <img
-                  src={gameThumb1}
-                  alt="Thumbnail 1"
-                  className="cursor-pointer"
-                  onClick={() => handleThumbnailClick(sampleVideo1)}
-                />
-                <img
-                  src={gameThumb2}
-                  alt="Thumbnail 2"
-                  className="cursor-pointer"
-                  onClick={() => handleThumbnailClick(sampleVideo2)}
-                />
-                <img
-                  src={gameThumb3}
-                  alt="Thumbnail 3"
-                  className="cursor-pointer"
-                  onClick={() => handleThumbnailClick(sampleVideo3)}
-                />
-                <img
-                  src={gameThumb4}
-                  alt="Thumbnail 4"
-                  className="cursor-pointer"
-                  onClick={() => handleThumbnailClick(sampleVideo4)}
-                />
-              </div>
+            </div>
+          </div>
+          {/* Thumbnails */}
+          <div className="">
+            <div className="grid  grid-cols-3 md:grid-cols-6 gap-2 px-5 my-2 md:my-10 bg-transparent">
+              <img
+                src={gameThumb1}
+                alt="Thumbnail 1"
+                className="cursor-pointer"
+                onClick={() => handleThumbnailClick(sampleVideo1)}
+              />
+              <img
+                src={gameThumb2}
+                alt="Thumbnail 2"
+                className="cursor-pointer"
+                onClick={() => handleThumbnailClick(sampleVideo2)}
+              />
+              <img
+                src={gameThumb3}
+                alt="Thumbnail 3"
+                className="cursor-pointer"
+                onClick={() => handleThumbnailClick(sampleVideo3)}
+              />
+              <img
+                src={gameThumb4}
+                alt="Thumbnail 4"
+                className="cursor-pointer"
+                onClick={() => handleThumbnailClick(sampleVideo4)}
+              />
+              <img
+                src={gameThumb5}
+                alt="Thumbnail 5"
+                className="cursor-pointer"
+                onClick={() => handleThumbnailClick(sampleVideo4)}
+              />
+              <img
+                src={gameThumb6}
+                alt="Thumbnail 4"
+                className="cursor-pointer"
+                onClick={() => handleThumbnailClick(sampleVideo4)}
+              />
             </div>
           </div>
         </div>

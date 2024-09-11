@@ -56,6 +56,35 @@ function VRexplore() {
                   className="video-class"
                 />
               )}
+                            {/* Thumbnails */}
+                            <div className="flex md:hidden justify-center ">
+              <div className=" relative grid  grid-cols-2 md:grid-cols-4  gap-2 my-10 bg-transparent">
+                <img
+                  src={gameThumb1}
+                  alt="Thumbnail 1"
+                  className="cursor-pointer"
+                  onClick={() => handleThumbnailClick(sampleVideo1)}
+                />
+                <img
+                  src={gameThumb2}
+                  alt="Thumbnail 2"
+                  className="cursor-pointer"
+                  onClick={() => handleThumbnailClick(sampleVideo2)}
+                />
+                <img
+                  src={gameThumb3}
+                  alt="Thumbnail 3"
+                  className="cursor-pointer"
+                  onClick={() => handleThumbnailClick(sampleVideo3)}
+                />
+                <img
+                  src={gameThumb4}
+                  alt="Thumbnail 4"
+                  className="cursor-pointer"
+                  onClick={() => handleThumbnailClick(sampleVideo4)}
+                />
+              </div>
+              </div>
             </div>
             <div className="p-4">
               <div className="flex justify-end gap-3">
@@ -87,7 +116,8 @@ function VRexplore() {
                 </div>
               </div>
               {/* Thumbnails */}
-              <div className="relative grid  grid-cols-2 md:grid-cols-4 gap-2 my-10 bg-transparent">
+              <div className="hidden md:block ">
+              <div className=" relative grid  grid-cols-2 md:grid-cols-4 gap-2 my-10 bg-transparent">
                 <img
                   src={gameThumb1}
                   alt="Thumbnail 1"
@@ -112,6 +142,7 @@ function VRexplore() {
                   className="cursor-pointer"
                   onClick={() => handleThumbnailClick(sampleVideo4)}
                 />
+              </div>
               </div>
             </div>
           </div>

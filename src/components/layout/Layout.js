@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
       <div>{children}</div>
      {/* Scroll to Top Button */}
      {isVisible && (
-        <div className="fixed bottom-4 right-4">
+        <div className="fixed bottom-14 z-50 right-4">
           <button
             onClick={scrollToTop}
             className="bg-white text-black  p-3 rounded-full hover:bg-gray-700 transition duration-300"
@@ -60,7 +60,7 @@ const Layout = ({ children }) => {
       
       <div className="bg-[#0c0e1a] py-5">
         <div className="flex justify-center">
-          <p className="text-white">
+          <p className="text-white text-sm md:text-lg">
             Copyrights &copy; {year} Endorphinx. All rights reserved.{" "}
           </p>
         </div>

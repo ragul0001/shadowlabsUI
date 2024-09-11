@@ -124,7 +124,7 @@ const Header = () => {
         <div
           className={`${
             isOpen ? "translate-x-0" : "translate-x-full"
-          } fixed inset-y-0 right-0 w-64 bg-[#0c0e1a] transform transition-transform duration-300 ease-in-out lg:static lg:flex lg:w-auto lg:translate-x-0`}
+          } fixed inset-y-0 right-0 w-64 z-50 bg-[#0c0e1a] transform transition-transform duration-300 ease-in-out lg:static lg:flex lg:w-auto lg:translate-x-0`}
         >
           <div className="flex text-[#fff] flex-col lg:flex-row lg:items-center lg:space-x-10 p-4 lg:p-0">
             {/* Close Button */}
