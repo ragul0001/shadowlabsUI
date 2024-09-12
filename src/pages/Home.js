@@ -29,14 +29,14 @@ function Home() {
               <div className="mx-0 md:mx-5">
                 <div>
                   <h1 className="text-[30px] text-white font-regular">
-                    Welcome to Endorphinx
+                    Welcome to Endorphins Studios 
                   </h1>
                   <p className="text-[14px] text-white font-light my-5">
-                    Welcome to ENDORPHINX - Partner with us to elevate your
+                    Welcome to Endorphins Studios  - Partner with us to elevate your
                     gaming experience to the next level.
                   </p>
                   <p className="text-[14px] text-white font-light my-5">
-                    At ENDORPHINX, we are committed to delivering the best in
+                    At Endorphins Studios, we are committed to delivering the best in
                     gaming services, combining innovation with top-quality
                     development. Whether you're looking for immersive 2D and 3D
                     games or cutting-edge experiences in AR and VR, we have you

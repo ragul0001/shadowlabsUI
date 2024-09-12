@@ -16,6 +16,11 @@ import gameThumb6 from "../assests/InnerPage/thum-big6.png";
 
 function Particles() {
   const [showVideo, setShowVideo] = useState(false);
+  const [currentMedia, setCurrentMedia] = useState({
+    type: "image",
+    src: gamification,
+  });
+  const [activeThumbnail, setActiveThumbnail] = useState(null); // Track the active thumbnail
 
   const handleShowVideo = () => {
     setShowVideo(true);
@@ -25,14 +30,11 @@ function Particles() {
     setShowVideo(false);
   };
 
-  const [currentMedia, setCurrentMedia] = useState({
-    type: "image",
-    src: gamification,
-  });
-
-  const handleThumbnailClick = (videoSrc) => {
+  const handleThumbnailClick = (videoSrc, index) => {
     setCurrentMedia({ type: "video", src: videoSrc });
+    setActiveThumbnail(index); // Set active thumbnail
   };
+
   return (
     <div className="bg-[#0c0e1a] relative ">
       <ParticlesComponent id="particles" />
@@ -124,42 +126,67 @@ function Particles() {
           </div>
           {/* Thumbnails */}
           <div className="">
-            <div className="grid  grid-cols-3 md:grid-cols-6 gap-2 px-5 my-2 md:my-10 bg-transparent">
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-2 px-5 my-2 md:my-10 bg-transparent">
+              {/* Thumbnails with active border effect */}
               <img
                 src={gameThumb1}
                 alt="Thumbnail 1"
-                className="cursor-pointer"
-                onClick={() => handleThumbnailClick(sampleVideo1)}
+                className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
+                  activeThumbnail === 1
+                    ? "border-4 border-blue-500 shadow-xl animate-pulse"
+                    : "border-2 border-transparent"
+                }`}
+                onClick={() => handleThumbnailClick(sampleVideo1, 1)}
               />
               <img
                 src={gameThumb2}
                 alt="Thumbnail 2"
-                className="cursor-pointer"
-                onClick={() => handleThumbnailClick(sampleVideo2)}
+                className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
+                  activeThumbnail === 2
+                    ? "border-4 border-blue-500 shadow-xl animate-pulse"
+                    : "border-2 border-transparent"
+                }`}
+                onClick={() => handleThumbnailClick(sampleVideo2, 2)}
               />
               <img
                 src={gameThumb3}
                 alt="Thumbnail 3"
-                className="cursor-pointer"
-                onClick={() => handleThumbnailClick(sampleVideo3)}
+                className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
+                  activeThumbnail === 3
+                    ? "border-4 border-blue-500 shadow-xl animate-pulse"
+                    : "border-2 border-transparent"
+                }`}
+                onClick={() => handleThumbnailClick(sampleVideo3, 3)}
               />
               <img
                 src={gameThumb4}
                 alt="Thumbnail 4"
-                className="cursor-pointer"
-                onClick={() => handleThumbnailClick(sampleVideo4)}
+                className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
+                  activeThumbnail === 4
+                    ? "border-4 border-blue-500 shadow-xl animate-pulse"
+                    : "border-2 border-transparent"
+                }`}
+                onClick={() => handleThumbnailClick(sampleVideo4, 4)}
               />
               <img
                 src={gameThumb5}
                 alt="Thumbnail 5"
-                className="cursor-pointer"
-                onClick={() => handleThumbnailClick(sampleVideo4)}
+                className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
+                  activeThumbnail === 5
+                    ? "border-4 border-blue-500 shadow-xl animate-pulse"
+                    : "border-2 border-transparent"
+                }`}
+                onClick={() => handleThumbnailClick(sampleVideo4, 5)}
               />
               <img
                 src={gameThumb6}
-                alt="Thumbnail 4"
-                className="cursor-pointer"
-                onClick={() => handleThumbnailClick(sampleVideo4)}
+                alt="Thumbnail 6"
+                className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
+                  activeThumbnail === 6
+                    ? "border-4 border-blue-500 shadow-xl animate-pulse"
+                    : "border-2 border-transparent"
+                }`}
+                onClick={() => handleThumbnailClick(sampleVideo4, 6)}
               />
             </div>
           </div>

@@ -52,10 +52,10 @@ function Explore() {
                 <div className="absolute inset-0 bg-[#12182a]   "></div>
                 <div className="relative p-8 bg-transparent md:h-[700px] lg:h-[380px] overflow-y-scroll">
                   <h1 className="text-[30px] font-semibold">
-                    Welcome to Endorphinx
+                    Welcome to Endorphins Studios
                   </h1>
                   <p className="mt-10 text-justify  ">
-                    At ENDORPHINX, we excel in creating visually captivating 2D
+                    At Endorphins Studios, we excel in creating visually captivating 2D
                     and 3D games that transform fitness into an engaging and
                     enjoyable experience. Our expertise in developing lifelike
                     AR and VR experiences ensures that we push the boundaries of
@@ -72,7 +72,7 @@ function Explore() {
                     workouts both fun and effective.
                   </p>
                   <p className="mt-10 text-justify ">
-                    In the evolving world of Web 3, ENDORPHINX stands at the
+                    In the evolving world of Web 3,Endorphins Studios stands at the
                     forefront, bringing gaming ideas to life through Blockchain
                     and NFT innovations. Our blockchain-based games and NFT
                     integrations open up new possibilities in decentralized
@@ -87,7 +87,7 @@ function Explore() {
                   </p>
                   <p className="mt-10 text-justify">
                     From game development to app design, AR/VR solutions, IoT
-                    connectivity, and Web 3 services, ENDORPHINX is dedicated to
+                    connectivity, and Web 3 services, Endorphins Studios is dedicated to
                     delivering seamless and engaging experiences that redefine
                     the gaming and fitness landscape.
                   </p>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assests/logo/Logo-new.png";
+import logo from "../../assests/logo/endorphins-logo.png";
 import home from "../../assests/Menu-Icons/home.png";
 import AppIcon from "../../assests/Menu-Icons/app.png";
 import Game from "../../assests/Menu-Icons/game.png";
