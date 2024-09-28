@@ -33,6 +33,13 @@ const Header = () => {
       label: "HOME",
     },
     {
+      name: "portfolio",
+      path: "/portfolio",
+      icon: home,
+      activeIcon: homeActive,
+      label: "PORTFOLIO",
+    },
+    {
       name: "app",
       path: "/#app",
       icon: AppIcon,
@@ -156,7 +163,8 @@ const Header = () => {
                 to={item.path}
                 onClick={() => setIsOpen(false)}
                 className={`flex items-center text-lg z-30 font-medium transition duration-300 ease-in-out transform hover:scale-110 ${
-                  location.hash === `#${item.path.split("#")[1]}`
+                  location.pathname === item.path ||
+                  (location.hash && location.hash === `#${item.path.split("#")[1]}`)
                     ? "text-[#3c66ee] border-b-0 border-[#3c66ee] lg:border-b-2 "
                     : "hover:text-[#3c66ee]"
                 }`}
@@ -164,19 +172,26 @@ const Header = () => {
                 <ul className="flex flex-row lg:flex-col list-none items-center">
                   <li
                     className={`transition-transform duration-300 ${
-                      location.hash === `#${item.path.split("#")[1]}`
+                      location.pathname === item.path ||
+                      (location.hash && location.hash === `#${item.path.split("#")[1]}`)
                         ? "scale-125"
                         : "scale-100 hover:animate-bounce"
                     }`}
                   >
                     {/* <img
-                      src={location.hash === `#${item.path.split('#')[1]}` ? item.activeIcon : item.icon}
+                      src={
+                        location.pathname === item.path ||
+                        (location.hash && location.hash === `#${item.path.split("#")[1]}`)
+                          ? item.activeIcon
+                          : item.icon
+                      }
                       alt={`${item.label} icon`}
                     /> */}
                   </li>
                   <li
                     className={`mx-3 my-5 lg:mx-0 lg:my-0 text-[14px] transition-transform duration-300 ${
-                      location.hash === `#${item.path.split("#")[1]}`
+                      location.pathname === item.path ||
+                      (location.hash && location.hash === `#${item.path.split("#")[1]}`)
                         ? "scale-110"
                         : ""
                     }`}

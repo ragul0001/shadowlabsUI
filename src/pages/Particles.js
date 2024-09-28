@@ -136,7 +136,7 @@ function Particles() {
                     ? "border-4 border-blue-500 shadow-xl animate-pulse"
                     : "border-2 border-transparent"
                 }`}
-                onClick={() => handleThumbnailClick(sampleVideo1, 1)}
+                onClick={() => handleThumbnailClick(sampleVideo1, 1)} 
               />
               <img
                 src={gameThumb2}

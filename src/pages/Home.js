@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import image1 from "../assests/background/image1.jpg";
 import backgroundImage from "../assests/background/app-development-bg.jpg";
 import appimg from "../assests/background/app-img.png";
@@ -13,6 +13,70 @@ import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/spark3.mp4";
 
 function Home() {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({
+    fullName: "",
+    email: "",
+    message: "",
+  });
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const validateForm = () => {
+    let formValid = true;
+    let newErrors = {
+      fullName: "",
+      email: "",
+      message: "",
+    };
+
+    // Full name validation
+    if (formData.fullName.trim() === "") {
+      newErrors.fullName = "Full Name is required";
+      formValid = false;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      newErrors.email = "Please enter a valid email";
+      formValid = false;
+    }
+
+    // Message validation
+    if (formData.message.trim() === "") {
+      newErrors.message = "Message is required";
+      formValid = false;
+    }
+
+    setErrors(newErrors);
+    return formValid;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      // Form is valid, proceed with submission
+      setIsSubmitted(true);
+      console.log("Form Submitted:", formData);
+    } else {
+      console.log("Form has errors");
+    }
+  };
+
   return (
     <div className="bg-[#0c0e1a]">
       {/* Welcome Pages */}
@@ -29,18 +93,18 @@ function Home() {
               <div className="mx-0 md:mx-5">
                 <div>
                   <h1 className="text-[30px] text-white font-regular">
-                    Welcome to Endorphins Studios 
+                    Welcome to Endorphins Studios
                   </h1>
                   <p className="text-[14px] text-white font-light my-5">
-                    Welcome to Endorphins Studios  - Partner with us to elevate your
-                    gaming experience to the next level.
+                    Welcome to Endorphins Studios - Partner with us to elevate
+                    your gaming experience to the next level.
                   </p>
                   <p className="text-[14px] text-white font-light my-5">
-                    At Endorphins Studios, we are committed to delivering the best in
-                    gaming services, combining innovation with top-quality
-                    development. Whether you're looking for immersive 2D and 3D
-                    games or cutting-edge experiences in AR and VR, we have you
-                    covered.
+                    At Endorphins Studios, we are committed to delivering the
+                    best in gaming services, combining innovation with
+                    top-quality development. Whether you're looking for
+                    immersive 2D and 3D games or cutting-edge experiences in AR
+                    and VR, we have you covered.
                   </p>
                   <Link to="../explore">
                     {" "}
@@ -58,7 +122,7 @@ function Home() {
         </section>
       </div>
       {/* App Development */}
-       <section
+      <section
         id="app"
         className="bg-cover bg-center min-h-screen flex items-center justify-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
@@ -80,7 +144,7 @@ function Home() {
                     IoT-enabled solutions to web apps using React Native, we
                     ensure quality, agility, and security in every project
                   </p>
-                
+
                   <Link to="../app">
                     {" "}
                     <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
@@ -99,8 +163,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>  
-
+      </section>
 
       {/* Backgrouond video with content */}
       {/* <div className="bg-[#0c0e1a] relative"  id="app">
@@ -231,14 +294,14 @@ function Home() {
                       healthcare, and education.{" "}
                     </p>
                     <Link to="../ar">
-                    {" "}
-                    <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
-                      <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                      <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
-                        Explore
-                      </span>
-                    </button>
-                  </Link>
+                      {" "}
+                      <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                        <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                        <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                          Explore
+                        </span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
                 {/* <div className=""> */}
@@ -343,11 +406,10 @@ function Home() {
                 <div>
                   <h1 className="text-[30px] text-white">Get in Touch</h1>
                   <p className="text-[14px] text-white font-light my-5 text-justify">
-                    Efficiently unleash cross-media information without
-                    cross-media value. Quickly maximize timely deliverable.
-                    Exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-                    ex ea commodo non habent claritatem insitamconsequat duis
-                    autem facilisis at vero eros
+                    Whether you have a question, feedback, or just want to say
+                    hello, we’re here to help. Fill out the form, and we’ll get
+                    back to you as soon as possible. Your input is important to
+                    us, and we look forward to connecting with you!
                   </p>
                   <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
                     <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
@@ -358,37 +420,88 @@ function Home() {
                 </div>
               </div>
               <div className="mx-0 md:mx-5 my-6">
-                <div class="">
-                  <div>
-                    <span class="uppercase text-sm text-white font-bold">
-                      Full Name
-                    </span>
-                    <input
-                      class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                      type="text"
-                      placeholder=""
-                    />
-                  </div>
-                  <div class="mt-8">
-                    <span class="uppercase text-sm text-white  font-bold">
-                      Email
-                    </span>
-                    <input
-                      class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                      type="text"
-                    />
-                  </div>
-                  <div class="mt-8">
-                    <span class="uppercase text-sm text-white  font-bold">
-                      Message
-                    </span>
-                    <textarea class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
-                  </div>
-                  <div class="mt-8">
-                    <button class="relative h-[50px] rounded-full w-full overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all before:absolute before:left-0 before:right-0 before:top-0 before:h-0 before:w-full before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-[#3c66ee] after:duration-500 hover:text-white hover:shadow-[#3c66ee] hover:before:h-2/4 hover:after:h-2/4">
-                      <span class="relative z-10">Send Message</span>
-                    </button>
-                  </div>
+                <div>
+                  {!isSubmitted ? (
+                    <form onSubmit={handleSubmit}>
+                      <div>
+                        <span className="uppercase text-sm text-white font-bold">
+                          Full Name
+                        </span>
+                        <input
+                          className={`w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline ${
+                            errors.fullName ? "border-red-500" : ""
+                          }`}
+                          type="text"
+                          name="fullName"
+                          value={formData.fullName}
+                          onChange={handleInputChange}
+                        />
+                        {errors.fullName && (
+                          <p className="text-red-500 text-xs mt-1">
+                            {errors.fullName}
+                          </p>
+                        )}
+                      </div>
+
+                      <div className="mt-8">
+                        <span className="uppercase text-sm text-white font-bold">
+                          Email
+                        </span>
+                        <input
+                          className={`w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline ${
+                            errors.email ? "border-red-500" : ""
+                          }`}
+                          type="text"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleInputChange}
+                        />
+                        {errors.email && (
+                          <p className="text-red-500 text-xs mt-1">
+                            {errors.email}
+                          </p>
+                        )}
+                      </div>
+
+                      <div className="mt-8">
+                        <span className="uppercase text-sm text-white font-bold">
+                          Message
+                        </span>
+                        <textarea
+                          className={`w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline ${
+                            errors.message ? "border-red-500" : ""
+                          }`}
+                          name="message"
+                          value={formData.message}
+                          onChange={handleInputChange}
+                        />
+                        {errors.message && (
+                          <p className="text-red-500 text-xs mt-1">
+                            {errors.message}
+                          </p>
+                        )}
+                      </div>
+
+                      <div className="mt-8">
+                        <button
+                          type="submit"
+                          className="relative h-[50px] rounded-full w-full overflow-hidden border border-[#3c66ee] text-white shadow-2xl transition-all before:absolute before:left-0 before:right-0 before:top-0 before:h-0 before:w-full before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-[#3c66ee] after:duration-500 hover:text-white hover:shadow-[#3c66ee] hover:before:h-2/4 hover:after:h-2/4"
+                        >
+                          <span className="relative z-10">Send Message</span>
+                        </button>
+                      </div>
+                    </form>
+                  ) : (
+                    <div className="text-center">
+                      <h2 className="text-white text-2xl font-bold">
+                        Thank You!
+                      </h2>
+                      <p className="text-gray-300 mt-4">
+                        Your message has been successfully sent. We will contact
+                        you soon.
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
