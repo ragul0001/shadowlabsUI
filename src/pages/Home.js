@@ -406,10 +406,7 @@ function Home() {
                 <div>
                   <h1 className="text-[30px] text-white">Get in Touch</h1>
                   <p className="text-[14px] text-white font-light my-5 text-justify">
-                    Whether you have a question, feedback, or just want to say
-                    hello, we’re here to help. Fill out the form, and we’ll get
-                    back to you as soon as possible. Your input is important to
-                    us, and we look forward to connecting with you!
+                  Whether you have a question, feedback, or just want to say hello, we’re here to help. Fill out the form, and we’ll get back to you as soon as possible. Your input is important to us, and we look forward to connecting with you!
                   </p>
                   <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
                     <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
