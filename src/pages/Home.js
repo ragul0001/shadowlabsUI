@@ -13,6 +13,7 @@ import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/spark3.mp4";
 import AR_Development from '../assests/Videos/ar-development.mp4';
 import VR_Development from '../assests/Videos/vr-development.mp4';
+import WelcomeBg from "../assests/Videos/welcome-bg-video.mp4"
 
 function Home() {
   const [formData, setFormData] = useState({
@@ -82,7 +83,7 @@ function Home() {
   return (
     <div className="bg-[#0c0e1a]">
       {/* Welcome Pages */}
-      <div
+      {/* <div
         id="welcome"
         className="container inset-0 flex items-center justify-center min-h-screen  mx-auto max-w-7xl lg:px-8"
       >
@@ -122,7 +123,53 @@ function Home() {
             </div>
           </div>
         </section>
+      </div> */}
+      <header className="relative flex justify-end items-center lg:h-screen mb-12 overflow-hidden">
+  <div
+    className={`container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500`}
+  >
+    <div className="flex justify-end items-center h-full">
+      <div className="px-4 md:px-3 lg:px-0 py-5 max-w-lg">
+        {/* New content here */}
+        <div className="mx-0 md:mx-5">
+          <div>
+            <h1 className="text-[30px] text-white font-regular">
+              Welcome to Endorphins Studios
+            </h1>
+            <p className="text-[14px] text-white font-light my-5">
+              Welcome to Endorphins Studios - Partner with us to elevate your gaming experience to the next level.
+            </p>
+            <p className="text-[14px] text-white font-light my-5">
+              At Endorphins Studios, we are committed to delivering the best in gaming services, combining innovation with top-quality development. Whether you're looking for immersive 2D and 3D games or cutting-edge experiences in AR and VR, we have you covered.
+            </p>
+            <Link to="../explore">
+              <button className="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee] text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                  Explore
+                </span>
+              </button>
+            </Link>
+          </div>
+        </div>
+        {/* End of new content */}
       </div>
+    </div>
+  </div>
+
+  <div className="absolute z-10 hidden lg:block w-screen min-w-full min-h-full max-w-none">
+    <ReactPlayer
+      url={WelcomeBg}
+      width="100%"
+      height="100%"
+      playing
+      loop
+      muted
+    />
+  </div>
+</header>
+
+
+
       {/* App Development */}
       <section
         id="app"
@@ -159,9 +206,9 @@ function Home() {
                 </div>
               </div>
 
-              <div className="">
+              {/* <div className="">
                 <img src={appimg} alt="the content image" className="" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
