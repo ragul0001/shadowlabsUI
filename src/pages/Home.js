@@ -11,6 +11,8 @@ import Contactimg from "../assests/Menu-Icons/background-with-flat-contact-eleme
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/spark3.mp4";
+import AR_Development from '../assests/Videos/ar-development.mp4';
+import VR_Development from '../assests/Videos/vr-development.mp4';
 
 function Home() {
   const [formData, setFormData] = useState({
@@ -272,7 +274,7 @@ function Home() {
       <section
         id="ar"
         className="bg-cover bg-center  flex items-center justify-center"
-        style={{ backgroundImage: `url(${game})` }}
+        // style={{ backgroundImage: `url(${game})` }}
       >
         {/* <section className="bg-black" id="ar"> */}
         <div className="container inset-0 flex items-center justify-center min-h-screen mx-auto max-w-7xl lg:px-8">
@@ -309,7 +311,19 @@ function Home() {
                   <img src={appimg} alt="the content image" className="hidden" /> */}
 
                 {/* </div> */}
+                <ReactPlayer
+              url={AR_Development}  
+              width="100%"          
+              height="auto"          
+              playing                
+              controls={false}       
+              muted={true}          
+              loop                   
+              className="rounded-lg shadow-xl"  
+            />
+                
               </div>
+              
             </div>
           </section>
         </div>
@@ -321,7 +335,17 @@ function Home() {
           <div className="flex justify-center items-center h-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 md:px-3 lg:px-0 py-5">
               <div className="">
-                <img src={AR} alt="the content image" />
+                {/* <img src={AR} alt="the content image" /> */}
+                <ReactPlayer
+              url={VR_Development}  
+              width="100%"          
+              height="auto"          
+              playing                
+              controls={false}       
+              muted={true}          
+              loop                   
+              className="rounded-lg shadow-xl"  
+            />
               </div>
 
               <div>
