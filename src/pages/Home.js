@@ -124,7 +124,7 @@ function Home() {
           </div>
         </section>
       </div> */}
-      <header className="relative flex justify-end items-center lg:h-screen mb-12 overflow-hidden">
+      <header className="relative flex justify-end items-center lg:h-screen overflow-hidden">
   <div id="welcome"
     className="container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500"
   >
@@ -536,7 +536,7 @@ function Home() {
     />
   </div>
 
-  <header className="relative flex justify-end items-center lg:h-screen mb-12 overflow-hidden">
+  <header className="relative flex justify-end items-center lg:h-screen overflow-hidden">
     {/* Content container aligned to the right */}
     <div className="container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500">
       <div className="flex justify-end items-center h-full">
