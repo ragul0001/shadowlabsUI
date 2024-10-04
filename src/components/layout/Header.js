@@ -165,7 +165,7 @@ const Header = () => {
                 className={`flex items-center text-lg z-30 font-medium transition duration-300 ease-in-out transform hover:scale-110 ${
                   location.pathname === item.path ||
                   (location.hash && location.hash === `#${item.path.split("#")[1]}`)
-                    ? "text-[#3c66ee] border-b-0 border-[#3c66ee] lg:border-b-2 "
+                    ? "text-[#17fff2] border-b-0 border-[#17fff2] lg:border-b-2 "
                     : "hover:text-[#17fff2]"
                 }`}
               >

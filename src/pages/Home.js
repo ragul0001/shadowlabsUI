@@ -474,7 +474,7 @@ function Home() {
     </div>
   </div> */}
 
-<div className="bg-[#0c0e1a] relative" id="ar-section">
+<div className="bg-[#0c0e1a] relative" id="ar">
   {/* Mobile video player */}
   <div className="block lg:hidden w-full min-w-full min-h-full max-w-none">
     <ReactPlayer
@@ -579,7 +579,7 @@ function Home() {
           </div>
         </div>
       </section> */}
-      <div className="bg-[#0c0e1a] relative" id="vr-section">
+      <div className="bg-[#0c0e1a] relative" id="vr">
   {/* Mobile video player */}
   <div className="block lg:hidden w-full min-w-full min-h-full max-w-none">
     <ReactPlayer
