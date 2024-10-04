@@ -81,7 +81,7 @@ function Home() {
   };
 
   return (
-    <div className="bg-[#000000]">
+    <div className="bg-[#0c0e1a]">
       {/* Welcome Pages */}
       {/* <div
         id="welcome"
@@ -492,7 +492,7 @@ function Home() {
     <div className="container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500">
       <div className="flex justify-start items-center h-full">
         <div className="w-full md:w-1/2 px-4 md:px-3 lg:px-0 py-5">
-          <div>
+          <div className="pr-32">
           <h1 className="text-[30px] text-white font-regular">AR Development</h1>
           <p className="text-[14px] text-white font-light my-5">
                       {" "}
@@ -580,7 +580,7 @@ function Home() {
           </div>
         </div>
       </section> */}
-      <div className=" relative" id="vr">
+      <div className="bg-[#0c0e1a] relative" id="vr">
   {/* Mobile video player */}
   <div className="block lg:hidden w-full min-w-full min-h-full max-w-none">
     <ReactPlayer
@@ -640,7 +640,7 @@ function Home() {
       {/* Web3.0 */}
       <section
         id="web"
-        className="bg-cover bg-center min-h-screen flex items-center justify-center"
+        className=" bg-cover bg-center min-h-screen flex items-center justify-center"
         style={{ backgroundImage: `url(${Web})` }}
       >
         <div className="container mx-auto max-w-7xl lg:px-8">
@@ -682,7 +682,7 @@ function Home() {
       {/* Contact */}
       <div
         id="contact"
-        className="container inset-0 flex items-center justify-center min-h-screen mx-auto max-w-7xl lg:px-8"
+        className=" container inset-0 flex items-center justify-center min-h-screen mx-auto max-w-7xl lg:px-8"
       >
         <section className="">
           <div className="">
