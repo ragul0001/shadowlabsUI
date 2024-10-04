@@ -95,7 +95,7 @@ const Header = () => {
     }
   }, [location]);
   return (
-    <nav className="bg-[#0c0e1a] shadow-md w-full z-10">
+    <nav className="bg-[#000000] shadow-md w-full z-10">
       <div className="container mx-auto lg:px-8 max-w-7xl px-4 py-6 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold">
@@ -131,7 +131,7 @@ const Header = () => {
         <div
           className={`${
             isOpen ? "translate-x-0" : "translate-x-full"
-          } fixed inset-y-0 right-0 w-64 z-50 bg-[#0c0e1a] transform transition-transform duration-300 ease-in-out lg:static lg:flex lg:w-auto lg:translate-x-0`}
+          } fixed inset-y-0 right-0 w-64 z-50 bg-[#000000] transform transition-transform duration-300 ease-in-out lg:static lg:flex lg:w-auto lg:translate-x-0`}
         >
           <div className="flex text-[#fff] flex-col lg:flex-row lg:items-center lg:space-x-10 p-4 lg:p-0">
             {/* Close Button */}
