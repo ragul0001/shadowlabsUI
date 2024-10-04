@@ -7,6 +7,10 @@ import image1 from "../assests/InnerPage/img1.png";
 import image2 from "../assests/InnerPage/img2.png";
 import image3 from "../assests/InnerPage/img3.png";
 import image4 from "../assests/InnerPage/img4.png";
+import Copy3D from "../assests/InnerPage/portfolio_posters/3D_copy.jpg";
+import AR from "../assests/InnerPage/portfolio_posters/AR.jpg";
+import GameCopy from "../assests/InnerPage/portfolio_posters/Game_copy.jpg";
+import VR from "../assests/InnerPage/portfolio_posters/VR_copy.jpg";
 
 // Import Slick CSS
 import "slick-carousel/slick/slick.css";
@@ -95,19 +99,19 @@ function Portfolio() {
           <div className="slider-container ">
             <Slider {...settings}>
               <div onClick={() => handleImageClick("image1")} className="flex justify-center">
-                <img src={image1} alt="portfolio image 1" className="rounded-xl cursor-pointer" />
+                <img src={Copy3D} alt="portfolio image 1" className="rounded-xl cursor-pointer" />
               </div>
               <div onClick={() => handleImageClick("image2")}>
-                <img src={image2} alt="portfolio image 2" className="rounded-xl cursor-pointer" />
+                <img src={AR} alt="portfolio image 2" className="rounded-xl cursor-pointer" />
               </div>
               <div onClick={() => handleImageClick("image3")}>
-                <img src={image3} alt="portfolio image 3" className="rounded-xl cursor-pointer" />
+                <img src={GameCopy} alt="portfolio image 3" className="rounded-xl cursor-pointer" />
               </div>
               <div onClick={() => handleImageClick("image4")}>
-                <img src={image4} alt="portfolio image 4" className="rounded-xl cursor-pointer" />
+                <img src={VR} alt="portfolio image 4" className="rounded-xl cursor-pointer" />
               </div>
               {/* Additional images (optional) */}
-              <div onClick={() => handleImageClick("image2")}>
+              {/* <div onClick={() => handleImageClick("image2")}>
                 <img src={image2} alt="portfolio image 4" className="rounded-xl" />
               </div>
               <div onClick={() => handleImageClick("image1")}>
@@ -115,7 +119,7 @@ function Portfolio() {
               </div>
               <div onClick={() => handleImageClick("image3")}>
                 <img src={image3} alt="portfolio image 4" className="rounded-xl" />
-              </div>
+              </div> */}
             </Slider>
           </div>
         </div>
