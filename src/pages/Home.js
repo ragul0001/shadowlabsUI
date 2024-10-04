@@ -81,7 +81,7 @@ function Home() {
   };
 
   return (
-    <div className="bg-[#0c0e1a]">
+    <div className="bg-[#000000]">
       {/* Welcome Pages */}
       {/* <div
         id="welcome"
@@ -474,7 +474,7 @@ function Home() {
     </div>
   </div> */}
 
-<div className="bg-[#0c0e1a] relative" id="ar">
+<div className=" relative" id="ar">
   {/* Mobile video player */}
   <div className="block lg:hidden w-full min-w-full min-h-full max-w-none">
     <ReactPlayer
@@ -495,13 +495,14 @@ function Home() {
           <div>
           <h1 className="text-[30px] text-white font-regular">AR Development</h1>
           <p className="text-[14px] text-white font-light my-5">
-            Our advanced AR, VR, MR, and XR solutions bring futuristic
-            experiences to life, merging the digital and physical
-            worlds. Whether creating immersive virtual environments or
-            enhancing real-world applications with AR, we provide
-            cutting-edge solutions for industries like gaming,
-            healthcare, and education.
-          </p>
+                      {" "}
+                      Our advanced AR, VR, MR, and XR solutions bring futuristic
+                      experiences to life, merging the digital and physical
+                      worlds. Whether creating immersive virtual environments or
+                      enhancing real-world applications with AR, we provide
+                      cutting-edgesolutions for industries like gaming,
+                      healthcare, and education.{" "}
+                    </p>
 
           <Link to="../ar">
             {" "}
@@ -579,7 +580,7 @@ function Home() {
           </div>
         </div>
       </section> */}
-      <div className="bg-[#0c0e1a] relative" id="vr">
+      <div className=" relative" id="vr">
   {/* Mobile video player */}
   <div className="block lg:hidden w-full min-w-full min-h-full max-w-none">
     <ReactPlayer
