@@ -2,16 +2,22 @@ import React, { useState } from "react";
 import ParticlesComponent from "../components/features/ParticlesComponent";
 import ReactPlayer from "react-player";
 import sampleVideo1 from "../assests/Videos/video1.mp4";
-import sampleVideo2 from "../assests/Videos/video2.mp4";
-import sampleVideo3 from "../assests/Videos/video3.mp4";
-import sampleVideo4 from "../assests/Videos/video4.mp4";
+// import sampleVideo2 from "../assests/Videos/video2.mp4";
+// import sampleVideo3 from "../assests/Videos/video3.mp4";
+// import sampleVideo4 from "../assests/Videos/video4.mp4";
 import gamification from "../assests/InnerPage/ban-vr.jpg";
-import gameThumb1 from "../assests/InnerPage/thum-big1.png";
-import gameThumb2 from "../assests/InnerPage/thum-big2.png";
-import gameThumb3 from "../assests/InnerPage/thum-big3.png";
-import gameThumb4 from "../assests/InnerPage/thum-big4.png";
-import gameThumb5 from "../assests/InnerPage/thum-big5.png";
-import gameThumb6 from "../assests/InnerPage/thum-big6.png";
+// import gameThumb1 from "../assests/InnerPage/thum-big1.png";
+// import gameThumb2 from "../assests/InnerPage/thum-big2.png";
+// import gameThumb3 from "../assests/InnerPage/thum-big3.png";
+// import gameThumb4 from "../assests/InnerPage/thum-big4.png";
+// import gameThumb5 from "../assests/InnerPage/thum-big5.png";
+// import gameThumb6 from "../assests/InnerPage/thum-big6.png";
+import BowOfLegend from "../assests/InnerPage/VR_Posters/bow_of_legend.jpg";
+import HumanAnatomy from "../assests/InnerPage/VR_Posters/human_anatomy.jpg";
+import QuantumPoster from "../assests/InnerPage/VR_Posters/quatum_poster.jpg";
+import BowOfLegend_video from "../assests/Videos/vr_videos/archery_game.mp4";
+import HumanAnatomy_video from "../assests/Videos/vr_videos/VR_anatomy.mp4";
+import QuantumPoster_video from "../assests/Videos/vr_videos/boxing_game.mp4";
 
 function VRexplore() {
   const [showVideo, setShowVideo] = useState(false);
@@ -97,39 +103,40 @@ function VRexplore() {
           </div>
           {/* Thumbnails */}
           <div className="">
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-2 px-5 my-2 md:my-10 bg-transparent">
+            {/* <div className="grid grid-cols-3 md:grid-cols-6 gap-2 px-5 my-2 md:my-10 bg-transparent"> */}
+            <div className="grid grid-cols-3 md:grid-cols-[repeat(auto-fit,_16.666666%)] gap-2 px-5 my-2 md:my-10 bg-transparent justify-center justify-self-center">
               {/* Thumbnails with active border effect */}
               <img
-                src={gameThumb1}
+                src={BowOfLegend}
                 alt="Thumbnail 1"
                 className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
                   activeThumbnail === 1
                     ? "border-4 border-blue-500 shadow-xl animate-pulse"
                     : "border-2 border-transparent"
                 }`}
-                onClick={() => handleThumbnailClick(sampleVideo1, 1)}
+                onClick={() => handleThumbnailClick(BowOfLegend_video, 1)}
               />
               <img
-                src={gameThumb2}
+                src={HumanAnatomy}
                 alt="Thumbnail 2"
                 className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
                   activeThumbnail === 2
                     ? "border-4 border-blue-500 shadow-xl animate-pulse"
                     : "border-2 border-transparent"
                 }`}
-                onClick={() => handleThumbnailClick(sampleVideo2, 2)}
+                onClick={() => handleThumbnailClick(HumanAnatomy_video, 2)}
               />
               <img
-                src={gameThumb3}
+                src={QuantumPoster}
                 alt="Thumbnail 3"
                 className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
                   activeThumbnail === 3
                     ? "border-4 border-blue-500 shadow-xl animate-pulse"
                     : "border-2 border-transparent"
                 }`}
-                onClick={() => handleThumbnailClick(sampleVideo3, 3)}
+                onClick={() => handleThumbnailClick(QuantumPoster_video, 3)}
               />
-              <img
+              {/* <img
                 src={gameThumb4}
                 alt="Thumbnail 4"
                 className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
@@ -158,7 +165,7 @@ function VRexplore() {
                     : "border-2 border-transparent"
                 }`}
                 onClick={() => handleThumbnailClick(sampleVideo4, 6)}
-              />
+              /> */}
             </div>
           </div>
         </div>

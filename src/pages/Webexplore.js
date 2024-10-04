@@ -3,6 +3,7 @@ import ParticlesComponent from "../components/features/ParticlesComponent";
 import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/sample.mp4";
 import gamification from "../assests/InnerPage/ban-web3.jpg";
+import Web_3 from "../assests/Videos/Web_3.mp4";
 
 function Webexplore() {
   const [showVideo, setShowVideo] = useState(false);
@@ -39,13 +40,23 @@ function Webexplore() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
             {/* Images and videos displayed */}
-            <div>
+            {/* <div>
               <img
                 src={gamification}
                 alt="the gamfications"
                 className="rounded-xl"
               />
-            </div>
+            </div> */}
+            <div>
+            <ReactPlayer
+      url={Web_3}
+      width="100%"
+      height="100%"
+      playing
+      loop
+      muted
+    />
+    </div>
             <div className="p-4">
               <div className="relative my-10 ">
                 <div className="absolute inset-0 bg-[#12182a]  "></div>

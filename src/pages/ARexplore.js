@@ -19,6 +19,11 @@ import gameThumb4 from "../assests/InnerPage/thum-big4.png";
 import gameThumb5 from "../assests/InnerPage/thum-big5.png";
 import gameThumb6 from "../assests/InnerPage/thum-big6.png";
 
+import AR_car from "../assests/InnerPage/AR_Posters/ar_car.jpg";
+import AR_dragon from "../assests/InnerPage/AR_Posters/ar_dragon.jpg";
+import AR_car_video from "../assests/Videos/ar_video/ar_car.mp4";
+import AR_dragon_video from "../assests/Videos/ar_video/ar_dragon.mp4";
+
 
 
 
@@ -112,29 +117,30 @@ function ARexplore() {
           </div>
           {/* Thumbnails */}
           <div className="">
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-2 px-5 my-2 md:my-10 bg-transparent">
-              {/* Thumbnails with active border effect */}
+            {/* <div className="grid grid-cols-3 md:grid-cols-6 gap-2 px-5 my-2 md:my-10 bg-transparent justify-center items-center"> */}
+            <div className="grid grid-cols-3 md:grid-cols-[repeat(auto-fit,_16.666666%)] gap-2 px-5 my-2 md:my-10 bg-transparent justify-center justify-self-center">
+              {/* Thumbnails with active border effect */} 
               <img
-                src={gameThumb1}
+                src={AR_car}
                 alt="Thumbnail 1"
                 className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
                   activeThumbnail === 1
                     ? "border-4 border-blue-500 shadow-xl animate-pulse"
                     : "border-2 border-transparent"
                 }`}
-                onClick={() => handleThumbnailClick(sampleVideo1, 1)}
+                onClick={() => handleThumbnailClick(AR_car_video, 1)}
               />
               <img
-                src={gameThumb2}
+                src={AR_dragon}
                 alt="Thumbnail 2"
                 className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
                   activeThumbnail === 2
                     ? "border-4 border-blue-500 shadow-xl animate-pulse"
                     : "border-2 border-transparent"
                 }`}
-                onClick={() => handleThumbnailClick(sampleVideo2, 2)}
+                onClick={() => handleThumbnailClick(AR_dragon_video, 2)}
               />
-              <img
+              {/* <img
                 src={gameThumb3}
                 alt="Thumbnail 3"
                 className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
@@ -173,7 +179,7 @@ function ARexplore() {
                     : "border-2 border-transparent"
                 }`}
                 onClick={() => handleThumbnailClick(sampleVideo4, 6)}
-              />
+              /> */}
             </div>
           </div>
         </div>
