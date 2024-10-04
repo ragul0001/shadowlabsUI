@@ -3,6 +3,7 @@ import ParticlesComponent from "../components/features/ParticlesComponent";
 import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/sample.mp4";
 import gamification from "../assests/InnerPage/ban-welcome.jpg";
+import HomeExplore from "../assests/Videos/home_explore.mp4"
 
 function Explore() {
   const [showVideo, setShowVideo] = useState(false);
@@ -39,13 +40,23 @@ function Explore() {
             </button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
-            <div>
+            {/* <div>
               <img
                 src={gamification}
                 alt="the gamfications"
                 className="rounded-xl"
               />
-            </div>
+            </div> */}
+            <div>
+            <ReactPlayer
+      url={HomeExplore}
+      width="100%"
+      height="100%"
+      playing
+      loop
+      muted
+    />
+    </div>
             <div className="p-4">
               <div className="relative  my-10">
                 <div></div>

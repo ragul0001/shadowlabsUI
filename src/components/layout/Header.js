@@ -166,7 +166,7 @@ const Header = () => {
                   location.pathname === item.path ||
                   (location.hash && location.hash === `#${item.path.split("#")[1]}`)
                     ? "text-[#3c66ee] border-b-0 border-[#3c66ee] lg:border-b-2 "
-                    : "hover:text-[#3c66ee]"
+                    : "hover:text-[#17fff2]"
                 }`}
               >
                 <ul className="flex flex-row lg:flex-col list-none items-center">
