@@ -131,7 +131,7 @@ function Home() {
     <div className="flex justify-end items-center h-full">
       <div className="px-4 md:px-3 lg:px-0 py-5 max-w-lg">
         
-        <div className="mx-0 md:mx-5 pl-32">
+        <div className="mx-0 md:mx-5 ">
           <div>
             <h1 className="text-[30px] text-white font-regular">
               Welcome to Endorphins Studios
