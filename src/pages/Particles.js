@@ -2,17 +2,30 @@ import React, { useState } from "react";
 import ParticlesComponent from "../components/features/ParticlesComponent";
 import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/sample.mp4";
-import sampleVideo1 from "../assests/Videos/video1.mp4"; // Add your video files
-import sampleVideo2 from "../assests/Videos/video2.mp4";
-import sampleVideo3 from "../assests/Videos/video3.mp4";
-import sampleVideo4 from "../assests/Videos/video4.mp4";
+// import sampleVideo1 from "../assests/Videos/video1.mp4"; // Add your video files
+// import sampleVideo2 from "../assests/Videos/video2.mp4";
+// import sampleVideo3 from "../assests/Videos/video3.mp4";
+// import sampleVideo4 from "../assests/Videos/video4.mp4";
 import gamification from "../assests/InnerPage/ban-gamification.jpg";
-import gameThumb1 from "../assests/InnerPage/thum-big1.png";
-import gameThumb2 from "../assests/InnerPage/thum-big2.png";
-import gameThumb3 from "../assests/InnerPage/thum-big3.png";
-import gameThumb4 from "../assests/InnerPage/thum-big4.png";
-import gameThumb5 from "../assests/InnerPage/thum-big5.png";
-import gameThumb6 from "../assests/InnerPage/thum-big6.png";
+// import gameThumb1 from "../assests/InnerPage/thum-big1.png";
+// import gameThumb2 from "../assests/InnerPage/thum-big2.png";
+// import gameThumb3 from "../assests/InnerPage/thum-big3.png";
+// import gameThumb4 from "../assests/InnerPage/thum-big4.png";
+// import gameThumb5 from "../assests/InnerPage/thum-big5.png";
+// import gameThumb6 from "../assests/InnerPage/thum-big6.png";
+import AstralPursuit from "../assests/InnerPage/gm_astral_pursuit.jpg";
+import BouncyTray from "../assests/InnerPage/gm_Bouncy_Tray.jpg";
+import GearLance from "../assests/InnerPage/gm_Gearlance.jpg";
+import KartKingdom from "../assests/InnerPage/gm_Kart_Kingdom.jpg";
+import RowingRivals from "../assests/InnerPage/gm_Rowing_Rivals .jpg";
+import RushGame from "../assests/InnerPage/gm_Rush_Game.jpg";
+import AstralPursuit_video from "../assests/Videos/gm_Astral_Pursuit.mp4";
+import RowingRivals_video from "../assests/Videos/gm_Boat_game.mp4";
+import BouncyTray_video from "../assests/Videos/gm_Bouncing_Ball.mp4"
+import GearLance_video from "../assests/Videos/gm_Gear_Lance.mp4"
+import KartKingdom_video from "../assests/Videos/gm_Kart_Game.mp4"
+import RushGame_video from "../assests/Videos/gm_Rush_Drive.mp4"
+
 
 function Particles() {
   const [showVideo, setShowVideo] = useState(false);
@@ -129,64 +142,64 @@ function Particles() {
             <div className="grid grid-cols-3 md:grid-cols-6 gap-2 px-5 my-2 md:my-10 bg-transparent">
               {/* Thumbnails with active border effect */}
               <img
-                src={gameThumb1}
+                src={AstralPursuit}
                 alt="Thumbnail 1"
                 className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
                   activeThumbnail === 1
                     ? "border-4 border-blue-500 shadow-xl animate-pulse"
                     : "border-2 border-transparent"
                 }`}
-                onClick={() => handleThumbnailClick(sampleVideo1, 1)} 
+                onClick={() => handleThumbnailClick(AstralPursuit_video, 1)} 
               />
               <img
-                src={gameThumb2}
+                src={BouncyTray}
                 alt="Thumbnail 2"
                 className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
                   activeThumbnail === 2
                     ? "border-4 border-blue-500 shadow-xl animate-pulse"
                     : "border-2 border-transparent"
                 }`}
-                onClick={() => handleThumbnailClick(sampleVideo2, 2)}
+                onClick={() => handleThumbnailClick(BouncyTray_video, 2)}
               />
               <img
-                src={gameThumb3}
+                src={GearLance}
                 alt="Thumbnail 3"
                 className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
                   activeThumbnail === 3
                     ? "border-4 border-blue-500 shadow-xl animate-pulse"
                     : "border-2 border-transparent"
                 }`}
-                onClick={() => handleThumbnailClick(sampleVideo3, 3)}
+                onClick={() => handleThumbnailClick(GearLance_video, 3)}
               />
               <img
-                src={gameThumb4}
+                src={KartKingdom}
                 alt="Thumbnail 4"
                 className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
                   activeThumbnail === 4
                     ? "border-4 border-blue-500 shadow-xl animate-pulse"
                     : "border-2 border-transparent"
                 }`}
-                onClick={() => handleThumbnailClick(sampleVideo4, 4)}
+                onClick={() => handleThumbnailClick(KartKingdom_video, 4)}
               />
               <img
-                src={gameThumb5}
+                src={RowingRivals}
                 alt="Thumbnail 5"
                 className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
                   activeThumbnail === 5
                     ? "border-4 border-blue-500 shadow-xl animate-pulse"
                     : "border-2 border-transparent"
                 }`}
-                onClick={() => handleThumbnailClick(sampleVideo4, 5)}
+                onClick={() => handleThumbnailClick(RowingRivals_video, 5)}
               />
               <img
-                src={gameThumb6}
+                src={RushGame}
                 alt="Thumbnail 6"
                 className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
                   activeThumbnail === 6
                     ? "border-4 border-blue-500 shadow-xl animate-pulse"
                     : "border-2 border-transparent"
                 }`}
-                onClick={() => handleThumbnailClick(sampleVideo4, 6)}
+                onClick={() => handleThumbnailClick(RushGame_video, 6)}
               />
             </div>
           </div>
