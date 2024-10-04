@@ -54,7 +54,7 @@ function Explore() {
       height="100%"
       playing
       loop
-      muted
+      controls
     />
     </div>
             <div className="p-4">
