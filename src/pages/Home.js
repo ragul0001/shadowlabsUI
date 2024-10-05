@@ -11,9 +11,9 @@ import Contactimg from "../assests/Menu-Icons/background-with-flat-contact-eleme
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/spark3.mp4";
-import AR_Development from "../assests/Videos/ar-development.mp4"
-import VR_Development from '../assests/Videos/vr-development.mp4';
-import WelcomeBg from "../assests/Videos/welcome-bg-video.mp4"
+import AR_Development from "../assests/Videos/ar-development.mp4";
+import VR_Development from "../assests/Videos/vr-development.mp4";
+import WelcomeBg from "../assests/Videos/welcome-bg-video.mp4";
 
 function Home() {
   const [formData, setFormData] = useState({
@@ -124,7 +124,7 @@ function Home() {
           </div>
         </section>
       </div> */}
-      <header className="relative flex justify-end items-center h-screen overflow-hidden">  
+      {/* <header className="relative flex justify-end items-center h-screen overflow-hidden">  
   <div id="welcome"
     className="container mx-auto max-w-7xl lg:px-8 relative z-30  text-white rounded-xl transition-all duration-500"
   >
@@ -168,8 +168,57 @@ function Home() {
       muted
     />
   </div>
-     </header>
-
+     </header>  */}
+      <section className="relative ">
+        <div className=" flex justify-end items-center h-screen overflow-hidden">
+          <div
+            id="welcome"
+            className="container mx-auto max-w-7xl lg:px-8 relative z-30  text-white rounded-xl transition-all duration-500"
+          >
+            <div className="flex justify-end items-center h-full">
+              <div className="w-full md:w-5/12 p-8 md:px-5 text-justify">
+                <div className="mx-0 md:mx-5 ">
+                  <div>
+                    <h1 className="text-[30px] text-white font-regular">
+                      Welcome to Endorphins Studios
+                    </h1>
+                    <p className="text-[14px] text-white font-light my-5">
+                      Welcome to Endorphins Studios - Partner with us to elevate
+                      your gaming experience to the next level.
+                    </p>
+                    <p className="text-[14px] text-white font-light my-5">
+                      At Endorphins Studios, we are committed to delivering the
+                      best in gaming services, combining innovation with
+                      top-quality development. Whether you're looking for
+                      immersive 2D and 3D games or cutting-edge experiences in
+                      AR and VR, we have you covered.
+                    </p>
+                    <Link to="../explore">
+                      {" "}
+                      <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                        <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                        <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                          Explore
+                        </span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute z-10 hidden lg:block   min-w-full min-h-full ">
+          <ReactPlayer
+            url={WelcomeBg}
+            width="100%"
+            height="100%"
+            playing
+            loop
+            muted
+          />
+        </div>
+        </div>
+      </section>
       {/* App Development */}
       <section
         id="app"
@@ -284,8 +333,9 @@ function Home() {
       <section
         id="gamification"
         className="bg-cover bg-center min-h-screen flex items-center justify-center"
-        style={{ backgroundImage: `url(${gamification})` }}>
-      {/* <div className="bg-[#0C0E1A]" id="gamification" > */}
+        style={{ backgroundImage: `url(${gamification})` }}
+      >
+        {/* <div className="bg-[#0C0E1A]" id="gamification" > */}
         <div className="container min-h-screen overflow-hidden flex justify-center items-center mx-auto max-w-7xl lg:px-8">
           <div className="flex justify-end items-center h-full">
             {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 md:px-3 lg:px-0 py-5"> */}
@@ -294,34 +344,32 @@ function Home() {
                 <img src={gamification} alt="the content image" className="" />
               </div> */}
 
-             
-                <div>
-                  <h1 className="text-[30px] text-white font-regular">
-                    Gamifications
-                  </h1>
-                  <p className="text-[14px] text-white text-justify font-light my-5 ">
-                    We lead in gamification, transforming sectors like Medical,
-                    Automobile, and Fitness into interactive and engaging
-                    experiences. By integrating 3D walkthroughs and gamelike
-                    elements, we help businesses enhance learning, training, and
-                    customer engagement, creating lasting impressions and
-                    improving outcomes.{" "}
-                  </p>
-                  <Link to="../particle">
-                    {" "}
-                    <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
-                      <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                      <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
-                        Explore
-                      </span>
-                    </button>
-                  </Link>
-                </div>
-              
+              <div>
+                <h1 className="text-[30px] text-white font-regular">
+                  Gamifications
+                </h1>
+                <p className="text-[14px] text-white text-justify font-light my-5 ">
+                  We lead in gamification, transforming sectors like Medical,
+                  Automobile, and Fitness into interactive and engaging
+                  experiences. By integrating 3D walkthroughs and gamelike
+                  elements, we help businesses enhance learning, training, and
+                  customer engagement, creating lasting impressions and
+                  improving outcomes.{" "}
+                </p>
+                <Link to="../particle">
+                  {" "}
+                  <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                    <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                    <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                      Explore
+                    </span>
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-      {/* </div> */}
+        {/* </div> */}
       </section>
       {/* AR */}
       {/* <section
@@ -437,8 +485,7 @@ function Home() {
   </header>
 </div> */}
 
-
-  {/* <div className="relative w-full h-screen" id="ar">
+      {/* <div className="relative w-full h-screen" id="ar">
     <ReactPlayer
       url={AR_Development}
       width="100%"
@@ -475,64 +522,65 @@ function Home() {
     </div>
   </div> */}
 
-<div className=" relative" id="ar">
-  {/* Mobile video player */}
-  <div className="block lg:hidden w-full min-w-full min-h-full max-w-none">
-    <ReactPlayer
-      url={AR_Development}
-      width="100%"
-      height="100%"
-      playing
-      loop
-      muted
-    />
-  </div>
+      <div className=" relative" id="ar">
+        {/* Mobile video player */}
+        <div className="block lg:hidden w-full min-w-full min-h-full max-w-none">
+          <ReactPlayer
+            url={AR_Development}
+            width="100%"
+            height="100%"
+            playing
+            loop
+            muted
+          />
+        </div>
 
-  <header className="relative flex justify-end items-center lg:h-screen overflow-hidden">
-    {/* Content container aligned to the right */}
-    <div className="container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500">
-      <div className="flex justify-start items-center h-full">
-        <div className="w-full md:w-1/2 px-4 md:px-3 lg:px-0 py-5">
-          <div className="pr-32">
-          <h1 className="text-[30px] text-white font-regular">AR Development</h1>
-          <p className="text-[14px] text-white font-light my-5">
-                      {" "}
-                      Our advanced AR, VR, MR, and XR solutions bring futuristic
-                      experiences to life, merging the digital and physical
-                      worlds. Whether creating immersive virtual environments or
-                      enhancing real-world applications with AR, we provide
-                      cutting-edgesolutions for industries like gaming,
-                      healthcare, and education.{" "}
-                    </p>
+        <header className="relative flex justify-end items-center lg:h-screen overflow-hidden">
+          {/* Content container aligned to the right */}
+          <div className="container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500">
+            <div className="flex justify-start items-center h-full">
+              <div className="w-full md:w-1/2 px-4 md:px-3 lg:px-0 py-5">
+                <div className="pr-32">
+                  <h1 className="text-[30px] text-white font-regular">
+                    AR Development
+                  </h1>
+                  <p className="text-[14px] text-white font-light my-5">
+                    {" "}
+                    Our advanced AR, VR, MR, and XR solutions bring futuristic
+                    experiences to life, merging the digital and physical
+                    worlds. Whether creating immersive virtual environments or
+                    enhancing real-world applications with AR, we provide
+                    cutting-edgesolutions for industries like gaming,
+                    healthcare, and education.{" "}
+                  </p>
 
-          <Link to="../ar">
-            {" "}
+                  <Link to="../ar">
+                    {" "}
                     <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
                       <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
                       <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
                         Explore
                       </span>
                     </button>
-          </Link>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+
+          {/* Video Background for larger screens */}
+          <div className="absolute z-10 hidden lg:block w-screen min-w-full min-h-full max-w-none">
+            <ReactPlayer
+              url={AR_Development}
+              width="100%"
+              height="100%"
+              playing
+              loop
+              muted
+            />
+          </div>
+        </header>
       </div>
-    </div>
-
-    {/* Video Background for larger screens */}
-    <div className="absolute z-10 hidden lg:block w-screen min-w-full min-h-full max-w-none">
-      <ReactPlayer
-        url={AR_Development}
-        width="100%"
-        height="100%"
-        playing
-        loop
-        muted
-      />
-    </div>
-  </header>
-</div>
-
 
       {/* VR */}
 
@@ -582,34 +630,36 @@ function Home() {
         </div>
       </section> */}
       <div className="bg-[#0c0e1a] relative" id="vr">
-  {/* Mobile video player */}
-  <div className="block lg:hidden w-full min-w-full min-h-full max-w-none">
-    <ReactPlayer
-      url={VR_Development}
-      width="100%"
-      height="100%"
-      playing
-      loop
-      muted
-    />
-  </div>
+        {/* Mobile video player */}
+        <div className="block lg:hidden w-full min-w-full min-h-full max-w-none">
+          <ReactPlayer
+            url={VR_Development}
+            width="100%"
+            height="100%"
+            playing
+            loop
+            muted
+          />
+        </div>
 
-  <header className="relative flex justify-end items-center lg:h-screen overflow-hidden">
-    {/* Content container aligned to the right */}
-    <div className="container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500">
-      <div className="flex justify-end items-center h-full">
-        <div className="w-full md:w-1/2 px-4 md:px-3 lg:px-0 py-5">
-          <div>
-            <h1 className="text-[30px] text-white font-regular">VR Development</h1>
-            <p className="text-[14px] text-white font-light my-5 text-justify">
-              Our VR development team creates fully immersive, realistic
-              virtual environments that transport users to entirely new
-              worlds. Whether for gaming, training, or virtual tours, we
-              deliver high-quality VR solutions that engage and inspire,
-              leveraging the latest in virtual reality technology.
-            </p>
+        <header className="relative flex justify-end items-center lg:h-screen overflow-hidden">
+          {/* Content container aligned to the right */}
+          <div className="container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500">
+            <div className="flex justify-end items-center h-full">
+              <div className="w-full md:w-1/2 px-4 md:px-3 lg:px-0 py-5">
+                <div>
+                  <h1 className="text-[30px] text-white font-regular">
+                    VR Development
+                  </h1>
+                  <p className="text-[14px] text-white font-light my-5 text-justify">
+                    Our VR development team creates fully immersive, realistic
+                    virtual environments that transport users to entirely new
+                    worlds. Whether for gaming, training, or virtual tours, we
+                    deliver high-quality VR solutions that engage and inspire,
+                    leveraging the latest in virtual reality technology.
+                  </p>
 
-            <Link to="../vr">
+                  <Link to="../vr">
                     {" "}
                     <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
                       <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
@@ -618,25 +668,24 @@ function Home() {
                       </span>
                     </button>
                   </Link>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+
+          {/* Video Background for larger screens */}
+          <div className="absolute z-10 hidden lg:block w-screen min-w-full min-h-full max-w-none">
+            <ReactPlayer
+              url={VR_Development}
+              width="100%"
+              height="100%"
+              playing
+              loop
+              muted
+            />
+          </div>
+        </header>
       </div>
-    </div>
-
-    {/* Video Background for larger screens */}
-    <div className="absolute z-10 hidden lg:block w-screen min-w-full min-h-full max-w-none">
-      <ReactPlayer
-        url={VR_Development}
-        width="100%"
-        height="100%"
-        playing
-        loop
-        muted
-      />
-    </div>
-  </header>
-</div>
-
 
       {/* Web3.0 */}
       <section
@@ -692,7 +741,10 @@ function Home() {
                 <div>
                   <h1 className="text-[30px] text-white">Get in Touch</h1>
                   <p className="text-[14px] text-white font-light my-5 text-justify">
-                  Whether you have a question, feedback, or just want to say hello, we’re here to help. Fill out the form, and we’ll get back to you as soon as possible. Your input is important to us, and we look forward to connecting with you!
+                    Whether you have a question, feedback, or just want to say
+                    hello, we’re here to help. Fill out the form, and we’ll get
+                    back to you as soon as possible. Your input is important to
+                    us, and we look forward to connecting with you!
                   </p>
                   <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
                     <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>

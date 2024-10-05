@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import ReactPlayer from "react-player";
+import {Link } from "react-router-dom";
 import ParticlesComponent from "../../components/features/ParticlesComponent";
 import bgImage from "../../assests/InnerPage/ban-ar.jpg";
 import image1 from "../../assests/InnerPage/img1.png";
@@ -16,10 +17,9 @@ import AR from "../../assests/Protfolio/3D/Volvo.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import sampleVideo1 from "../../assests/Videos/video1.mp4"; // Add your video files
-import sampleVideo2 from "../../assests/Videos/video2.mp4";
-import sampleVideo3 from "../../assests/Videos/video1.mp4"; // Correct this if it's wrong
-import sampleVideo4 from "../../assests/Videos/video4.mp4";
+import sampleVideo1 from "../../assests/Protfolio/videos/Metahuman .mp4"; // Add your video files
+import sampleVideo2 from "../../assests/Protfolio/videos/Volvo Car .mp4";
+
 
 function Three() {
     const [activeVideo, setActiveVideo] = useState(null);
@@ -64,8 +64,6 @@ function Three() {
     const videoMapping = {
       image1: sampleVideo1,
       image2: sampleVideo2,
-      image3: sampleVideo3,
-      image4: sampleVideo4,
     };
   
     const handleImageClick = (image) => {
@@ -74,8 +72,21 @@ function Three() {
     };
   
   return (
+    
     <div className="bg-[#0c0e1a] relative h-screen" id="portfolio">
     <ParticlesComponent id="particles" />
+        <div className="container mx-auto max-w-7xl lg:px-8"> 
+        <div className=" flex justify-end gap-3">
+          <Link to={"/portfolio"}> <button
+              class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
+            >
+              <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+              <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                Back
+              </span>
+            </button></Link> 
+          </div>
+        </div>
     <section className="relative flex justify-end overflow-hidden">
       <div className="container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500">
         <div className="flex justify-center py-10">
