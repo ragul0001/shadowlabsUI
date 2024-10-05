@@ -17,7 +17,7 @@ function Explore() {
   };
 
   return (
-    <div className="bg-[#0c0e1a] relative h-[650px]">
+    <div className="bg-[#0c0e1a] relative h-[750px]">
       <ParticlesComponent id="particles" />
       <header className="relative flex justify-end  overflow-hidden">
         {/* Content hide and show videos */}
@@ -28,7 +28,7 @@ function Explore() {
               : "translate-x-0 opacity-100"
           }`}
         >
-          <div className="flex justify-end gap-3">
+          {/* <div className="flex justify-end gap-3">
             <button
               onClick={handleShowVideo}
               class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
@@ -38,7 +38,7 @@ function Explore() {
                 Show Videos
               </span>
             </button>
-          </div>
+          </div> */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
             {/* <div>
               <img
@@ -61,7 +61,7 @@ function Explore() {
               <div className="relative  my-10">
                 <div></div>
                 <div className="absolute inset-0 bg-[#12182a]   "></div>
-                <div className="relative p-8 bg-transparent md:h-[700px] lg:h-[380px] overflow-y-scroll">
+                <div className="relative p-8 bg-transparent md:h-[700px] lg:h-[340px] overflow-y-scroll">
                   <h1 className="text-[30px] font-semibold">
                     Welcome to Endorphins Studios
                   </h1>

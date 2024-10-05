@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import ReactPlayer from "react-player";
+import {Link } from "react-router-dom";
 import ParticlesComponent from "../components/features/ParticlesComponent";
 import bgImage from "../assests/InnerPage/ban-ar.jpg";
 import image1 from "../assests/InnerPage/img1.png";
@@ -25,6 +26,7 @@ function Portfolio() {
   const [activeVideo, setActiveVideo] = useState(null);
 
   const settings = {
+    arrows:false,
     dots: true,
     infinite: false,
     speed: 500,
@@ -53,7 +55,7 @@ function Portfolio() {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 2,
+          slidesToScroll: 1 ,
         },
       },
     ],
@@ -98,17 +100,23 @@ function Portfolio() {
           </div>
           <div className="slider-container ">
             <Slider {...settings}>
-              <div onClick={() => handleImageClick("image1")} className="flex justify-center">
+             <Link to="/three"><div onClick={() => handleImageClick("image1")} className="flex justify-center">
                 <img src={Copy3D} alt="portfolio image 1" className="rounded-xl cursor-pointer" />
-              </div>
-              <div onClick={() => handleImageClick("image2")}>
+              </div></Link> 
+              <Link to={"/arp"}><div onClick={() => handleImageClick("image2")}>
                 <img src={AR} alt="portfolio image 2" className="rounded-xl cursor-pointer" />
-              </div>
+              </div></Link>
+              <Link to={"/game"}> <div onClick={() => handleImageClick("image3")}>
+                <img src={GameCopy} alt="portfolio image 3" className="rounded-xl cursor-pointer" />
+              </div></Link>
+              <Link to={"/vrp"}> <div onClick={() => handleImageClick("image4")}>
+                <img src={VR} alt="portfolio image 4" className="rounded-xl cursor-pointer" />
+              </div></Link>
               <div onClick={() => handleImageClick("image3")}>
                 <img src={GameCopy} alt="portfolio image 3" className="rounded-xl cursor-pointer" />
               </div>
-              <div onClick={() => handleImageClick("image4")}>
-                <img src={VR} alt="portfolio image 4" className="rounded-xl cursor-pointer" />
+              <div onClick={() => handleImageClick("image1")} className="flex justify-center">
+                <img src={Copy3D} alt="portfolio image 1" className="rounded-xl cursor-pointer" />
               </div>
               {/* Additional images (optional) */}
               {/* <div onClick={() => handleImageClick("image2")}>

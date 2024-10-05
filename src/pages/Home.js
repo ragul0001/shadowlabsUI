@@ -81,7 +81,7 @@ function Home() {
   };
 
   return (
-    <div className="bg-[#0c0e1a]">
+    <div className="bg-[#0c0e1a] ">
       {/* Welcome Pages */}
       {/* <div
         id="welcome"
@@ -124,9 +124,9 @@ function Home() {
           </div>
         </section>
       </div> */}
-      <header className="relative flex justify-end items-center lg:h-screen overflow-hidden">
+      <header className="relative flex justify-end items-center h-screen overflow-hidden">  
   <div id="welcome"
-    className="container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500"
+    className="container mx-auto max-w-7xl lg:px-8 relative z-30  text-white rounded-xl transition-all duration-500"
   >
     <div className="flex justify-end items-center h-full">
       <div className="px-4 md:px-3 lg:px-0 py-5 max-w-lg">
@@ -168,7 +168,8 @@ function Home() {
       muted
     />
   </div>
-</header>
+     </header>
+
       {/* App Development */}
       <section
         id="app"

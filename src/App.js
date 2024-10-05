@@ -10,6 +10,10 @@ import ARexplore from './pages/ARexplore';
 import Appexplore from './pages/Appexplore';
 import VRexplore from './pages/VRexplore';
 import Webexplore from './pages/Webexplore'
+import Three from './components/PortfolioPages/Three';
+import Arp from './components/PortfolioPages/Arp';
+import Vrp from './components/PortfolioPages/Vr';
+import Gaming from './components/PortfolioPages/Gaming';
 
 
 
@@ -27,6 +31,10 @@ function App() {
           <Route path="/ar" element={<ARexplore/>}/>
           <Route path="/vr" element={<VRexplore/>}/>
           <Route path="/web" element={<Webexplore/>}/>
+          <Route path="/three" element={<Three/>}/>
+          <Route path="/arp" element={<Arp/>}/>
+          <Route path="/vrp" element={<Vrp/>}/>
+          <Route path="/game" element={<Gaming/>}/>
         </Routes>
       </Layout>
     </BrowserRouter>
