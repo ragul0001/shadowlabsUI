@@ -35,7 +35,7 @@ function Arp() {
           breakpoint: 1024,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             infinite: true,
             dots: true,
           },
@@ -44,7 +44,7 @@ function Arp() {
           breakpoint: 700,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             initialSlide: 2,
           },
         },
@@ -52,7 +52,7 @@ function Arp() {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
           },
         },
       ],
