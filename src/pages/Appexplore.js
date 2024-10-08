@@ -16,9 +16,9 @@ function Appexplore() {
   };
 
   return (
-    <div className="bg-[#0c0e1a] relative h-[690px]">
+    <div className="bg-[#0c0e1a] relative ">
       <ParticlesComponent id="particles" />
-      <header className="relative flex justify-end  overflow-hidden">
+      <header className="relative flex justify-end  overflow-hidden py-28">
         <div
           className={`container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 ${
             showVideo

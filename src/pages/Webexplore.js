@@ -17,11 +17,11 @@ function Webexplore() {
   };
 
   return (
-    <div className="bg-[#0c0e1a] relative h-[680px]">
+    <div className="bg-[#0c0e1a] h-auto">
       <ParticlesComponent id="particles" />
-      <header className="relative flex justify-end  overflow-hidden">
+      <header className="relative flex justify-end  overflow-hidden py-28">
         <div
-          className={`container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 ${
+          className={`container mx-auto  max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 ${
             showVideo
               ? "-translate-x-full opacity-0 pointer-events-none"
               : "translate-x-0 opacity-100"
