@@ -11,6 +11,7 @@ import image3 from "../../assests/InnerPage/img3.png";
 import image4 from "../../assests/InnerPage/img4.png";
 import Copy3D from "../../assests/Protfolio/3D/Human Modeling.jpg";
 import AR from "../../assests/Protfolio/3D/Volvo.jpg";
+import VideoPlayer from "../../common/VideoPlayer";
 
 
 // Import Slick CSS
@@ -94,13 +95,13 @@ function Three() {
           
             // If a video is active, show the video instead of the background image
             <div>
-            <ReactPlayer
-                url={activeVideo}
-                playing
-                controls
-                width="100%"
-                height="100%"
-                className="video-class"
+            <VideoPlayer
+                activeVideo={activeVideo}
+                // playing
+                // controls
+                // width="100%"
+                // height="100%"
+                // className="video-class"
               />
             </div>
           ) : (

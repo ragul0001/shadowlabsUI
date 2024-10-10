@@ -23,16 +23,11 @@ import AR_car from "../assests/InnerPage/AR_Posters/ar_car.jpg";
 import AR_dragon from "../assests/InnerPage/AR_Posters/ar_dragon.jpg";
 import AR_car_video from "../assests/Videos/ar_video/ar_car.mp4";
 import AR_dragon_video from "../assests/Videos/ar_video/ar_dragon.mp4";
-
-
-
-
-
-
-
+import VideoPlayer from "../common/VideoPlayer";
 
 function ARexplore() {
   const [showVideo, setShowVideo] = useState(false);
+  const [activeVideo, setActiveVideo] = useState(false);
   const [currentMedia, setCurrentMedia] = useState({
     type: "image",
     src: gamification,
@@ -58,7 +53,7 @@ function ARexplore() {
       <header className="relative flex justify-end  overflow-hidden ">
         <div
           className={`container mx-auto max-w-7xl  lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 ${
-            showVideo
+            activeVideo
               ? "-translate-x-full opacity-0 pointer-events-none"
               : "translate-x-0 opacity-100"
           }`}
@@ -85,13 +80,13 @@ function ARexplore() {
                   className="rounded-xl"
                 />
               ) : (
-                <ReactPlayer
-                  url={currentMedia.src}
-                  playing
-                  controls
-                  width="100%"
-                  height="100%"
-                  className="video-class"
+                <VideoPlayer
+                  activeVideo={currentMedia.src}
+                  // playing
+                  // controls
+                  // width="100%"
+                  // height="100%"
+                  // className="video-class"
                 />
               )}
             </div>

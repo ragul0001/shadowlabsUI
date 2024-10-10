@@ -4,10 +4,12 @@ import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/sample.mp4";
 import gamification from "../assests/InnerPage/ban-web3.jpg";
 import Web_3 from "../assests/Videos/Web_3.mp4";
+import VideoPlayer from "../common/VideoPlayer";
 
 function Webexplore() {
   const [showVideo, setShowVideo] = useState(false);
-
+  const [activeVideo, setActiveVideo] = useState(false);
+  
   const handleShowVideo = () => {
     setShowVideo(true);
   };
@@ -22,7 +24,7 @@ function Webexplore() {
       <header className="relative flex justify-end  overflow-hidden py-28  ">
         <div
           className={`container mx-auto  max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 ${
-            showVideo
+            activeVideo
               ? "-translate-x-full opacity-0 pointer-events-none"
               : "translate-x-0 opacity-100"
           }`}
@@ -49,8 +51,8 @@ function Webexplore() {
               />
             </div> */}
             <div>
-            <ReactPlayer
-      url={Web_3}
+            <VideoPlayer
+      activeVideo={Web_3}
       width="100%"
       height="100%"
       playing

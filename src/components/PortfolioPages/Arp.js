@@ -11,14 +11,15 @@ import image3 from "../../assests/InnerPage/img3.png";
 import image4 from "../../assests/InnerPage/img4.png";
 import ar1 from "../../assests/Protfolio/AR/AR Dragon .jpg";
 import ar2 from "../../assests/Protfolio/AR/AR Image .jpg";
+import VideoPlayer from "../../common/VideoPlayer";
 
 
 // Import Slick CSS
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import sampleVideo1 from "../../assests/Videos/ar_video/ar_car.mp4";
-import sampleVideo2 from "../../assests/Videos/ar_video/ar_dragon.mp4";
+import AR_car_video from "../../assests/Videos/ar_video/ar_car.mp4";
+import AR_dragon_video from "../../assests/Videos/ar_video/ar_dragon.mp4";
 function Arp() {
     const [activeVideo, setActiveVideo] = useState(null);
 
@@ -60,8 +61,8 @@ function Arp() {
   
     // Mapping images to corresponding videos
     const videoMapping = {
-      image1: sampleVideo1,
-      image2: sampleVideo2,
+      image1: AR_dragon_video,
+      image2: AR_car_video,
     };
   
     const handleImageClick = (image) => {
@@ -91,13 +92,13 @@ function Arp() {
           
             // If a video is active, show the video instead of the background image
             <div>
-            <ReactPlayer
-                url={activeVideo}
-                playing
-                controls
-                width="100%"
-                height="100%"
-                className="video-class"
+            <VideoPlayer
+                activeVideo={activeVideo}
+                // playing
+                // controls
+                // width="100%"
+                // height="100%"
+                // className="video-class"
               />
             </div>
           ) : (

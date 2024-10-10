@@ -15,33 +15,31 @@ import game3 from "../../assests/Protfolio/Games/Gearlance.jpg";
 import game4 from "../../assests/Protfolio/Games/Kart Kingdom.jpg";
 import game5 from "../../assests/Protfolio/Games/Rowing Rivals.jpg";
 import game6 from "../../assests/Protfolio/Games/Rush Drive.jpg";
-
-
-
-
-
-
+import VideoPlayer from "../../common/VideoPlayer";
 
 // Import Slick CSS
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import sampleVideo1 from "../../assests/Videos/gm_Astral_Pursuit.mp4";
-import sampleVideo2 from "../../assests/Videos/gm_Bouncing_Ball.mp4";
-import sampleVideo3 from "../../assests/Videos/gm_Gear_Lance.mp4";
-import sampleVideo4 from "../../assests/Videos/gm_Kart_Game.mp4";
-import sampleVideo5 from "../../assests/Videos/gm_Boat_game.mp4";
-import sampleVideo6 from "../../assests/Videos/gm_Rush_Drive.mp4";
-
-
-
+// import sampleVideo1 from "../../assests/Videos/gm_Astral_Pursuit.mp4";
+// import sampleVideo2 from "../../assests/Videos/gm_Bouncing_Ball.mp4";
+// import sampleVideo3 from "../../assests/Videos/gm_Gear_Lance.mp4";
+// import sampleVideo4 from "../../assests/Videos/gm_Kart_Game.mp4";
+// import sampleVideo5 from "../../assests/Videos/gm_Boat_game.mp4";
+// import sampleVideo6 from "../../assests/Videos/gm_Rush_Drive.mp4";
+import AstralPursuit_video from "../../assests/Videos/gm_Astral_Pursuit.mp4";
+import RowingRivals_video from "../../assests/Videos/gm_Boat_game.mp4";
+import BouncyTray_video from "../../assests/Videos/gm_Bouncing_Ball.mp4"
+import GearLance_video from "../../assests/Videos/gm_Gear_Lance.mp4"
+import KartKingdom_video from "../../assests/Videos/gm_Kart_Game.mp4"
+import RushGame_video from "../../assests/Videos/gm_Rush_Drive.mp4"
 
 function Gaming() {
     const [activeVideo, setActiveVideo] = useState(null);
 
     const settings = {
       dots: true,
-      arrows:false,
+      // arrows:false,
       infinite: false,
       speed: 500,
       slidesToShow: 4,
@@ -77,12 +75,12 @@ function Gaming() {
   
     // Mapping images to corresponding videos
     const videoMapping = {
-      image1: sampleVideo1,
-      image2: sampleVideo2,
-      image3: sampleVideo3,
-      image4: sampleVideo4,
-      image5: sampleVideo5,
-      image6: sampleVideo6,
+      image1: AstralPursuit_video,
+      image2: BouncyTray_video,
+      image3: GearLance_video,
+      image4: KartKingdom_video,
+      image5: RowingRivals_video,
+      image6: RushGame_video,
     };
   
     const handleImageClick = (image) => {
@@ -112,13 +110,13 @@ function Gaming() {
           
             // If a video is active, show the video instead of the background image
             <div>
-            <ReactPlayer
-                url={activeVideo}
-                playing
-                controls
-                width="100%"
-                height="100%"
-                className="video-class"
+            <VideoPlayer
+                activeVideo={activeVideo}
+                // playing
+                // controls
+                // width="100%"
+                // height="100%"
+                // className="video-class"
               />
             </div>
           ) : (

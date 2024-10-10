@@ -12,6 +12,7 @@ import image4 from "../../assests/InnerPage/img4.png";
 import vr1 from "../../assests/Protfolio/VR/Bow Of Langend.jpg";
 import vr2 from "../../assests/Protfolio/VR/Human Anatomy.jpg";
 import vr3 from "../../assests/Protfolio/VR/Quantum Fighter.jpg";
+import VideoPlayer from "../../common/VideoPlayer";
 
 
 // Import Slick CSS
@@ -96,13 +97,13 @@ function Vr() {
           
             // If a video is active, show the video instead of the background image
             <div>
-            <ReactPlayer
-                url={activeVideo}
-                playing
-                controls
-                width="100%"
-                height="100%"
-                className="video-class"
+            <VideoPlayer
+                activeVideo={activeVideo}
+                // playing
+                // controls
+                // width="100%"
+                // height="100%"
+                // className="video-class"
               />
             </div>
           ) : (

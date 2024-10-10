@@ -4,9 +4,10 @@ import ReactPlayer from "react-player";
 import sampleVideo from "../assests/Videos/sample.mp4";
 import gamification from "../assests/InnerPage/ban-welcome.jpg";
 import HomeExplore from "../assests/Videos/home_explore.mp4"
-
+import VideoPlayer from "../common/VideoPlayer";
 function Explore() {
   const [showVideo, setShowVideo] = useState(false);
+  const [activeVideo, setActiveVideo] = useState(false);
 
   const handleShowVideo = () => {
     setShowVideo(true);
@@ -23,7 +24,7 @@ function Explore() {
         {/* Content hide and show videos */}
         <div
           className={`container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 ${
-            showVideo
+            activeVideo
               ? "-translate-x-full opacity-0 pointer-events-none"
               : "translate-x-0 opacity-100"
           }`}
@@ -48,13 +49,13 @@ function Explore() {
               />
             </div> */}
             <div>
-            <ReactPlayer
-      url={HomeExplore}
-      width="100%"
-      height="100%"
-      playing
-      loop
-      controls
+            <VideoPlayer
+      activeVideo={HomeExplore}
+      // width="100%"
+      // height="100%"
+      // playing
+      // loop
+      // controls
     />
     </div>
             <div className="p-4">

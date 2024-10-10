@@ -25,10 +25,12 @@ import BouncyTray_video from "../assests/Videos/gm_Bouncing_Ball.mp4"
 import GearLance_video from "../assests/Videos/gm_Gear_Lance.mp4"
 import KartKingdom_video from "../assests/Videos/gm_Kart_Game.mp4"
 import RushGame_video from "../assests/Videos/gm_Rush_Drive.mp4"
+import VideoPlayer from "../common/VideoPlayer";
 
 
 function Particles() {
   const [showVideo, setShowVideo] = useState(false);
+  const [activeVideo, setActiveVideo] = useState(false);
   const [currentMedia, setCurrentMedia] = useState({
     type: "image",
     src: gamification,
@@ -54,7 +56,7 @@ function Particles() {
       <header className="relative flex justify-end  overflow-hidden">
         <div
           className={`container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 ${
-            showVideo
+            activeVideo
               ? "-translate-x-full opacity-0 pointer-events-none"
               : "translate-x-0 opacity-100"
           }`}
@@ -79,13 +81,13 @@ function Particles() {
                   className="rounded-xl"
                 />
               ) : (
-                <ReactPlayer
-                  url={currentMedia.src}
-                  playing
-                  controls
-                  width="100%"
-                  height="100%"
-                  className="video-class  "
+                <VideoPlayer
+                  activeVideo={currentMedia.src}
+                  // playing
+                  // controls
+                  // width="100%"
+                  // height="100%"
+                  // className="video-class  "
                 />
               )}
             </div>

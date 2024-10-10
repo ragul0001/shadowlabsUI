@@ -18,9 +18,11 @@ import QuantumPoster from "../assests/InnerPage/VR_Posters/quatum_poster.jpg";
 import BowOfLegend_video from "../assests/Videos/vr_videos/archery_game.mp4";
 import HumanAnatomy_video from "../assests/Videos/vr_videos/VR_anatomy.mp4";
 import QuantumPoster_video from "../assests/Videos/vr_videos/boxing_game.mp4";
+import VideoPlayer from "../common/VideoPlayer";
 
 function VRexplore() {
   const [showVideo, setShowVideo] = useState(false);
+  const [activeVideo, setActiveVideo] = useState(false);
   const [currentMedia, setCurrentMedia] = useState({
     type: "image",
     src: gamification,
@@ -46,7 +48,7 @@ function VRexplore() {
       <header className="relative flex justify-end overflow-hidden">
         <div
           className={`container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500 ${
-            showVideo
+            activeVideo
               ? "-translate-x-full opacity-0 pointer-events-none"
               : "translate-x-0 opacity-100"
           }`}
@@ -71,13 +73,13 @@ function VRexplore() {
                   className="rounded-xl"
                 />
               ) : (
-                <ReactPlayer
-                  url={currentMedia.src}
-                  playing
-                  controls
-                  width="100%"
-                  height="100%"
-                  className="video-class"
+                <VideoPlayer
+                  activeVideo={currentMedia.src}
+                  // playing
+                  // controls
+                  // width="100%"
+                  // height="100%"
+                  // className="video-class"
                 />
               )}
             </div>
