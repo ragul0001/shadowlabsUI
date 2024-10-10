@@ -176,17 +176,17 @@ function Home() {
             className="container mx-auto max-w-7xl lg:px-8 relative z-30  text-white rounded-xl transition-all duration-500"
           >
             <div className="flex justify-end items-center h-full">
-              <div className="w-full md:w-5/12 p-8 md:px-5 text-justify">
+              <div className="w-full md:w-5/12 p-8 md:px-5 ">
                 <div className="mx-0 md:mx-5 ">
                   <div>
-                    <h1 className="text-[30px] text-white font-regular">
-                      Welcome to Endorphins Studios
-                    </h1>
-                    <p className="text-[14px] text-white font-light my-5">
+                  <h1 className="text-[30px] text-white font-regular">
+                    Welcome to Endorphins Studios
+                  </h1>
+                    <p className="text-[14px] text-white font-light my-5 text-justify">
                       Welcome to Endorphins Studios - Partner with us to elevate
                       your gaming experience to the next level.
                     </p>
-                    <p className="text-[14px] text-white font-light my-5">
+                    <p className="text-[14px] text-white font-light my-5 text-justify">
                       At Endorphins Studios, we are committed to delivering the
                       best in gaming services, combining innovation with
                       top-quality development. Whether you're looking for
@@ -540,11 +540,11 @@ function Home() {
           <div className="container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500">
             <div className="flex justify-start items-center h-full">
               <div className="w-full md:w-1/2 px-4 md:px-3 lg:px-0 py-5">
-                <div className="pr-32">
+                <div className="pr-48">
                   <h1 className="text-[30px] text-white font-regular">
                     AR Development
                   </h1>
-                  <p className="text-[14px] text-white font-light my-5">
+                  <p className="text-[14px] text-white font-light my-5 text-justify">
                     {" "}
                     Our advanced AR, VR, MR, and XR solutions bring futuristic
                     experiences to life, merging the digital and physical
