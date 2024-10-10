@@ -14,6 +14,7 @@ import sampleVideo from "../assests/Videos/spark3.mp4";
 import AR_Development from "../assests/Videos/ar-development.mp4";
 import VR_Development from "../assests/Videos/vr-development.mp4";
 import WelcomeBg from "../assests/Videos/welcome-bg-video.mp4";
+import emailjs from 'emailjs-com';
 
 function Home() {
   const [formData, setFormData] = useState({
@@ -37,7 +38,7 @@ function Home() {
       [name]: value,
     });
   };
-
+  console.log(formData);
   const validateForm = () => {
     let formValid = true;
     let newErrors = {
@@ -73,6 +74,20 @@ function Home() {
     e.preventDefault();
     if (validateForm()) {
       // Form is valid, proceed with submission
+      const emailParams = {
+        form_name: formData.fullName,
+        form_email: formData.email,
+        message: formData.message,
+      }
+      console.log(emailParams);
+      console.log(formData);
+      //send email via emailjs
+      emailjs.send(
+        'service_3xka4um',
+        'template_8fmoyhl',
+        emailParams,
+        'E-3leV7L6eHuVspkE'
+      )
       setIsSubmitted(true);
       console.log("Form Submitted:", formData);
     } else {
