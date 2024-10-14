@@ -69,24 +69,116 @@ function Home() {
     setErrors(newErrors);
     return formValid;
   };
+  
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (validateForm()) {
+  //     // Form is valid, proceed with submission
+  //     // const emailParams = {
+  //     //   form_name: formData.fullName,
+  //     //   form_email: formData.email,
+  //     //   message: formData.message,
+  //     // }
+  //     // console.log(emailParams);
+  //     // console.log(formData);
+  //     // //send email via emailjs
+  //     // emailjs.send(
+  //     //   'service_3xka4um',
+  //     //   'template_8fmoyhl',
+  //     //   emailParams,
+  //     //   'E-3leV7L6eHuVspkE'
+  //     // )
+  //     // window.Email.send({
+  //     //   Host:process.env.REACT_APP_SMTP_HOST,
+  //     //   Username:process.env.REACT_APP_SMTP_USERNAME,
+  //     //   Password: process.env.REACT_APP_SMTP_PASSWORD,
+  //     //   To: process.env.REACT_APP_SMTP_USERNAME,
+  //     //   From: formData.email,
+  //     //   Subject:`New message from ${formData.fullName}`,
+  //     //   Body:`
+  //     //   <h2>New message from ${formData.fullName}</h2>
+  //     //   <p>Email: ${formData.email}</p>
+  //     //   <p>Message: ${formData.message}</p>`
+  //     // }).then((message) => {
+  //     //   alert("Message sent successfully!");
+  //     //   setIsSubmitted(true);
+  //     // }).catch((error) => {
+  //     //   console.error("Failed to send the message:", error);
+  //     // });
+  //   //   window.Email.send({
+  //   //     Host: process.env.REACT_APP_SMTP_HOST,
+  //   //     Username: process.env.REACT_APP_SMTP_USERNAME,
+  //   //     Password: process.env.REACT_APP_SMTP_PASSWORD,
+  //   //     To: process.env.REACT_APP_SMTP_USERNAME,
+  //   //     // To: 'lakshmiprabha41295@gmail.com',
+  //   //     From: process.env.REACT_APP_SMTP_USERNAME,
+  //   //     Subject: `New message from ${formData.fullName}`,
+  //   //     Body: `
+  //   //       <h2>New message from ${formData.fullName}</h2>
+  //   //       <p>Email: ${formData.email}</p>
+  //   //       <p>Message: ${formData.message}</p>
+  //   //     `
+  //   //  }).then((message) => {
+  //   //     alert("Message sent successfully!");
+  //   //     setIsSubmitted(true);
+  //   //  }).catch((error) => {
+  //   //     console.error("Failed to send the message:", error.message);
+  //   //     alert("Failed to send the message: " + error.message);
+  //   //  });
+  //   try {
+  //     const config = {
+  //       // Username:'prabhakrishnamoorthy@yopmail.com',
+  //       // Password: 'A25293BC1243FD2C359608A1940A8614EC65',
+  //       // Host: 'smtp.elasticemail.com',
+  //       // Port:2525,
+  //       SecureToken:' f0be7811-c8c3-4dca-90e5-e99b05e8e63f',
+  //       To : 'prabhakrishnamoorthy@yopmail.com',
+  //       From : formData.email,
+  //       Subject : `New message from ${formData.fullName}`,
+  //       Body : `
+  //            <h2>New message from ${formData.fullName}</h2>
+  //            <p>Email: ${formData.email}</p>
+  //            <p>Message: ${formData.message}</p>
+  //          `, 
+  //     }
+  //     if(window.Email){
+  //       window.Email.send(config);
+  //       setIsSubmitted(true);
+  //     console.log("Form Submitted:", formData);
+  //     }
+
+  //   } catch (error) {
+  //     console.error("Failed to send the message:", error.message);
+  //     alert("Failed to send the message: " + error.message);
+  //   }
+    
+      
+  //   } else {
+  //     console.log("Form has errors");
+  //   }
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
       // Form is valid, proceed with submission
       const emailParams = {
-        form_name: formData.fullName,
-        form_email: formData.email,
+        from_name: formData.fullName,
+        from_email: formData.email,
         message: formData.message,
       }
       console.log(emailParams);
       console.log(formData);
+      const serviceId = process.env.REACT_APP_SERVICE_ID;
+      const templateId = process.env.REACT_APP_TEMPLATE_ID;
+      const publickey = process.env.REACT_APP_PUBLIC_KEY;
       //send email via emailjs
       emailjs.send(
-        'service_3xka4um',
-        'template_8fmoyhl',
+        serviceId,
+        templateId,
         emailParams,
-        'E-3leV7L6eHuVspkE'
+        publickey
       )
       setIsSubmitted(true);
       console.log("Form Submitted:", formData);
