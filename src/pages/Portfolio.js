@@ -17,10 +17,10 @@ import VR from "../assests/InnerPage/portfolio_posters/VR_copy.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import sampleVideo1 from "../assests/Videos/video1.mp4"; // Add your video files
-import sampleVideo2 from "../assests/Videos/video2.mp4";
-import sampleVideo3 from "../assests/Videos/video1.mp4"; // Correct this if it's wrong
-import sampleVideo4 from "../assests/Videos/video4.mp4";
+// import sampleVideo1 from "../assests/Videos/video1.mp4"; // Add your video files
+// import sampleVideo2 from "../assests/Videos/video2.mp4";
+// import sampleVideo3 from "../assests/Videos/video1.mp4"; // Correct this if it's wrong
+// import sampleVideo4 from "../assests/Videos/video4.mp4";
 
 function Portfolio() {
   const [activeVideo, setActiveVideo] = useState(null);
@@ -62,16 +62,16 @@ function Portfolio() {
   };
 
   // Mapping images to corresponding videos
-  const videoMapping = {
-    image1: sampleVideo1,
-    image2: sampleVideo2,
-    image3: sampleVideo3,
-    image4: sampleVideo4,
-  };
+  // const videoMapping = {
+  //   image1: sampleVideo1,
+  //   image2: sampleVideo2,
+  //   image3: sampleVideo3,
+  //   image4: sampleVideo4,
+  // };
 
   const handleImageClick = (image) => {
     // Set the active video based on the clicked image
-    setActiveVideo(videoMapping[image]);
+    // setActiveVideo(videoMapping[image]);
   };
 
   return (

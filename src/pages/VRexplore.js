@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import ParticlesComponent from "../components/features/ParticlesComponent";
 import ReactPlayer from "react-player";
-import sampleVideo1 from "../assests/Videos/video1.mp4";
+import sampleVideo from "../assests/Videos/sample.mp4"
+// import sampleVideo1 from "../assests/Videos/video1.mp4";
 // import sampleVideo2 from "../assests/Videos/video2.mp4";
 // import sampleVideo3 from "../assests/Videos/video3.mp4";
 // import sampleVideo4 from "../assests/Videos/video4.mp4";
@@ -185,7 +186,7 @@ function VRexplore() {
             </button>
             <div className="w-screen min-w-full max-w-none">
               <ReactPlayer
-                url={sampleVideo1}
+                url={sampleVideo}
                 width="100%"
                 height="100%"
                 playing
