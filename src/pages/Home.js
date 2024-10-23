@@ -11,6 +11,7 @@ import ReactPlayer from "react-player";
 // import sampleVideo from "../assests/Videos/spark3.mp4";
 import AR_Development from "../assests/Videos/ar-development.mp4";
 import VR_Development from "../assests/Videos/vr-development.mp4";
+import welcomeVideo from "../assests/Videos/homepage.mp4"
 import WelcomeBg from "../assests/Videos/welcome-bg-video.mp4";
 import emailjs from 'emailjs-com';
 
@@ -274,7 +275,9 @@ function Home() {
     />
   </div>
      </header>  */}
-      <section className="relative ">
+
+     {/* OLD WELCOME ENDOPHORNX */}
+      {/* <section className="relative ">
         <div className=" flex justify-end items-center h-screen overflow-hidden">
           <div
             id="welcome"
@@ -323,7 +326,38 @@ function Home() {
           />
         </div>
         </div>
-      </section>
+      </section> */}
+
+     {/* NEW WELCOME*/}
+
+     <div class="relative  h-screen">
+
+  <div className=" absolute inset-0 w-full h-full object-cover">
+  <ReactPlayer  
+              url={welcomeVideo}
+              width="100%"
+              height="100%"
+              playing
+              loop
+              muted
+            />
+  </div>
+  <div class="absolute inset-0 bg-black bg-opacity-75 ">
+    <div class="text-center text-white flex flex-col justify-center my-10">
+      <h1 class="text-md md:text-5xl font-bold">PRODUCING THE FUTURE OF HEALTH & FITNESS MEDIA  </h1>
+      <p class="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
+      </p>
+    </div>
+    {/* bottom  */}
+    <div class="absolute inset-x-0 bottom-0 text-center text-white mb-10">
+      <h1 class="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
+      <p class="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
+      </p>
+    </div>
+  </div>
+</div>
+
+
       {/* App Development */}
       <section
         id="app"

@@ -23,28 +23,90 @@ import contactActive from "../../assests/Menu-Icons/contact-active.png";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  //  old menu
+  // const menuItems = [
+  //   {
+  //     name: "home",
+  //     path: "/#welcome",
+  //     icon: home,
+  //     activeIcon: homeActive,
+  //     label: "HOME",
+  //   },
+  //   {
+  //     name: "portfolio",
+  //     path: "/portfolio",
+  //     icon: home,
+  //     activeIcon: homeActive,
+  //     label: "PORTFOLIO",
+  //   },
+  //   {
+  //     name: "app",
+  //     path: "/#app",
+  //     icon: AppIcon,
+  //     activeIcon: AppActive,
+  //     label: "APP",
+  //   },
+  //   // { name: 'game', path: '/game', icon: Game, activeIcon: GameActive, label: 'GAME' },
+  //   {
+  //     name: "gamification",
+  //     path: "/#gamification",
+  //     icon: Gamification,
+  //     activeIcon: GamificationActive,
+  //     label: "GAMIFICATION",
+  //   },
+  //   {
+  //     name: "ar",
+  //     path: "/#ar",
+  //     icon: Ar,
+  //     activeIcon: ArActive,
+  //     label: "AR",
+  //   },
+  //   {
+  //     name: "vr",
+  //     path: "/#vr",
+  //     icon: Ar,
+  //     activeIcon: ArActive,
+  //     label: "VR",
+  //   },
+  //   {
+  //     name: "web",
+  //     path: "/#web",
+  //     icon: web,
+  //     activeIcon: webActive,
+  //     label: "WEB 3.0",
+  //   },
+  //   // { name: 'blog', path: '/blog', icon: Blog, activeIcon: BlogActive, label: 'BLOG' },
+  //   {
+  //     name: "contact",
+  //     path: "/#contact",
+  //     icon: contact,
+  //     activeIcon: contactActive,
+  //     label: "CONTACT",
+  //   },
+  // ];
 
+  //new menu
   const menuItems = [
     {
       name: "home",
       path: "/#welcome",
       icon: home,
       activeIcon: homeActive,
-      label: "HOME",
+      label: "Home",
     },
     {
       name: "portfolio",
       path: "/portfolio",
       icon: home,
       activeIcon: homeActive,
-      label: "PORTFOLIO",
+      label: "Portfolio",
     },
     {
       name: "app",
       path: "/#app",
       icon: AppIcon,
       activeIcon: AppActive,
-      label: "APP",
+      label: "Video",
     },
     // { name: 'game', path: '/game', icon: Game, activeIcon: GameActive, label: 'GAME' },
     {
@@ -52,28 +114,22 @@ const Header = () => {
       path: "/#gamification",
       icon: Gamification,
       activeIcon: GamificationActive,
-      label: "GAMIFICATION",
+      label: "Gamification",
     },
     {
       name: "ar",
       path: "/#ar",
       icon: Ar,
       activeIcon: ArActive,
-      label: "AR",
+      label: "Reality",
     },
-    {
-      name: "vr",
-      path: "/#vr",
-      icon: Ar,
-      activeIcon: ArActive,
-      label: "VR",
-    },
+
     {
       name: "web",
       path: "/#web",
       icon: web,
       activeIcon: webActive,
-      label: "WEB 3.0",
+      label: "Simulations & Learning",
     },
     // { name: 'blog', path: '/blog', icon: Blog, activeIcon: BlogActive, label: 'BLOG' },
     {
@@ -81,7 +137,7 @@ const Header = () => {
       path: "/#contact",
       icon: contact,
       activeIcon: contactActive,
-      label: "CONTACT",
+      label: "Contact",
     },
   ];
 
