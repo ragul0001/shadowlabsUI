@@ -139,36 +139,7 @@ function VRexplore() {
                 }`}
                 onClick={() => handleThumbnailClick(QuantumPoster_video, 3)}
               />
-              {/* <img
-                src={gameThumb4}
-                alt="Thumbnail 4"
-                className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
-                  activeThumbnail === 4
-                    ? "border-4 border-blue-500 shadow-xl animate-pulse"
-                    : "border-2 border-transparent"
-                }`}
-                onClick={() => handleThumbnailClick(sampleVideo4, 4)}
-              />
-              <img
-                src={gameThumb5}
-                alt="Thumbnail 5"
-                className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
-                  activeThumbnail === 5
-                    ? "border-4 border-blue-500 shadow-xl animate-pulse"
-                    : "border-2 border-transparent"
-                }`}
-                onClick={() => handleThumbnailClick(sampleVideo4, 5)}
-              />
-              <img
-                src={gameThumb6}
-                alt="Thumbnail 6"
-                className={`cursor-pointer transform transition-all duration-500 hover:scale-110 rounded-xl  ${
-                  activeThumbnail === 6
-                    ? "border-4 border-blue-500 shadow-xl animate-pulse"
-                    : "border-2 border-transparent"
-                }`}
-                onClick={() => handleThumbnailClick(sampleVideo4, 6)}
-              /> */}
+            
             </div>
           </div>
         </div>
