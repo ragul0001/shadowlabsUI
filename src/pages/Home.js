@@ -377,7 +377,7 @@ function Home() {
             muted
           />
 </div>
-<div className="absolute inset-0 bg-black bg-opacity-75  flex justify-center items-center ">
+<div className="absolute inset-0 bg-black bg-opacity-50  flex justify-center items-center ">
   <div className="text-center text-[#17fff2] flex flex-col  my-10">
     <h1 className="text-md md:text-5xl font-bold">Elevating Fitness Journeys through Engaging Game Mechanics </h1>
     {/* <p className="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
@@ -463,7 +463,7 @@ function Home() {
             muted
           />
 </div>
-<div className="absolute inset-0 bg-black bg-opacity-75 flex justify-center items-center  ">
+<div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center  ">
   <div className="text-center text-[#17fff2]  flex flex-col  my-10">
     <h1 className="text-md md:text-5xl font-bold"> Bringing Health to Life with Revolutionary AR and VR Experiences </h1>
     {/* <p className="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
@@ -547,7 +547,7 @@ function Home() {
             muted
           />
 </div>
-<div className="absolute inset-0 bg-black bg-opacity-75 flex justify-center items-center  ">
+<div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center  ">
   <div className="text-center text-[#17fff2] flex flex-col  my-10 ">
     <h1 className="text-md md:text-5xl font-bold">Enhancing Performance with Innovative IoT Simulations and Tools </h1>
     {/* <p className="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
