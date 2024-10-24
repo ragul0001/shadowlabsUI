@@ -133,9 +133,9 @@ function Home() {
                     </p>
                     <Link to="../explore">
                       {" "}
-                      <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
-                        <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                        <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                      <button className="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                        <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                        <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
                           Explore
                         </span>
                       </button>
@@ -160,7 +160,7 @@ function Home() {
 
      {/* NEW WELCOME*/}
 
-     <div class="relative  h-screen">
+     <div className="relative  h-screen">
 
   <div className=" absolute hidden lg:block w-screen min-w-full min-h-full max-w-none">
   <ReactPlayer  
@@ -172,16 +172,16 @@ function Home() {
               muted
             />
   </div>
-  <div class="absolute inset-0 bg-black bg-opacity-75">
-    <div class="text-center text-white flex flex-col justify-center my-10">
-      <h1 class="text-md md:text-5xl font-bold">PRODUCING THE FUTURE OF HEALTH & FITNESS MEDIA  </h1>
-      <p class="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
+  <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+    <div className="text-center text-[#17fff2] flex flex-col  my-10">
+      <h1 className="text-md md:text-5xl font-bold">PRODUCING THE FUTURE OF HEALTH & FITNESS MEDIA  </h1>
+      <p className="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
       </p>
     </div>
     {/* bottom  */}
-    <div class="absolute inset-x-0 bottom-0 text-center text-white mb-10">
-      <h1 class="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
-      <p class="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
+    <div className="absolute inset-x-0 bottom-0 text-center text-[#17fff2] mb-10">
+      <h1 className="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
+      <p className="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
       </p>
     </div>
   </div>
@@ -214,13 +214,13 @@ function Home() {
 
                   <Link to="../app">
                     {" "}
-                    <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
-                      <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                      <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                    <button className="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                      <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                      <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
                         Explore
                       </span>
                     </button>
-                  </Link>
+                  </Link>justify-center items-center
                 </div>
               </div>
 
@@ -232,7 +232,7 @@ function Home() {
         </div>
       </section> */}
       {/* NEW APP DEVELOPMENT */}
-      <div class="relative  h-screen">
+      <div className="relative  h-screen">
 <div className=" absolute hidden lg:block w-screen min-w-full min-h-full max-w-none">
 <ReactPlayer  
             url={Video}
@@ -244,16 +244,16 @@ function Home() {
             
           />
 </div>
-<div class=" absolute inset-0 bg-black bg-opacity-75 flex  justify-center items-center ">
-  <div class=" text-center text-white flex flex-col  my-10 mx-10">
-    <h1 class="text-md md:text-5xl font-bold items-center ">Capturing the Essence of Wellness with Next-Gen Fitness Videos </h1>
-    {/* <p class="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
+<div className=" absolute inset-0 bg-black bg-opacity-50 flex  justify-center items-center ">
+  <div className=" text-center text-[#17fff2] flex flex-col  my-10 mx-10">
+    <h1 className="text-md md:text-5xl font-bold items-center ">Capturing the Essence of Wellness with Next-Gen Fitness Videos </h1>
+    {/* <p className="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
     </p> */}
   </div>
   {/* bottom  */}
-  {/* <div class="absolute inset-x-0 bottom-0 text-center text-white mb-10">
-    <h1 class="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
-    <p class="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
+  {/* <div className="absolute inset-x-0 bottom-0 text-center text-white mb-10">
+    <h1 className="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
+    <p className="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
     </p>
   </div> */}
 </div>
@@ -294,9 +294,9 @@ function Home() {
                       every project
                     </p>
 
-                    <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
-                      <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                      <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                    <button className="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                      <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                      <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
                         Explore
                       </span>
                     </button>
@@ -342,7 +342,7 @@ function Home() {
                 <h1 className="text-[30px] text-white font-regular">
                   Gamifications
                 </h1>
-                <p className="text-[14px] text-white text-justify font-light my-5 ">
+                <p classNameName="text-[14px] text-white text-justify font-light my-5 ">
                   We lead in gamification, transforming sectors like Medical,
                   Automobile, and Fitness into interactive and engaging
                   experiences. By integrating 3D walkthroughs and gamelike
@@ -352,9 +352,9 @@ function Home() {
                 </p>
                 <Link to="../particle">
                   {" "}
-                  <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
-                    <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                    <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                  <button className="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                    <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                    <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
                       Explore
                     </span>
                   </button>
@@ -366,7 +366,7 @@ function Home() {
        
       </section> */}
       {/*NEW GAMIFICATION */}
-      <div class="relative  h-screen">
+      <div className="relative  h-screen">
 <div className=" absolute  hidden lg:block w-screen min-w-full min-h-full max-w-none">
 <ReactPlayer  
             url={VR_Development}
@@ -377,16 +377,16 @@ function Home() {
             muted
           />
 </div>
-<div class="absolute inset-0 bg-black bg-opacity-75  flex justify-center items-center ">
-  <div class="text-center text-white flex flex-col  my-10">
-    <h1 class="text-md md:text-5xl font-bold">Elevating Fitness Journeys through Engaging Game Mechanics </h1>
-    {/* <p class="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
+<div className="absolute inset-0 bg-black bg-opacity-75  flex justify-center items-center ">
+  <div className="text-center text-[#17fff2] flex flex-col  my-10">
+    <h1 className="text-md md:text-5xl font-bold">Elevating Fitness Journeys through Engaging Game Mechanics </h1>
+    {/* <p className="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
     </p> */}
   </div>
   {/* bottom  */}
-  {/* <div class="absolute inset-x-0 bottom-0 text-center text-white mb-10">
-    <h1 class="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
-    <p class="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
+  {/* <div className="absolute inset-x-0 bottom-0 text-center text-white mb-10">
+    <h1 className="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
+    <p className="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
     </p>
   </div> */}
 </div>
@@ -427,9 +427,9 @@ function Home() {
 
                   <Link to="../ar">
                     {" "}
-                    <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
-                      <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                      <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                    <button className="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                      <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                      <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
                         Explore
                       </span>
                     </button>
@@ -452,7 +452,7 @@ function Home() {
           </div>
         </header>
       </div> */}
-<div class="relative  h-screen">
+<div className="relative  h-screen">
 <div className="absolute  hidden lg:block w-screen min-w-full min-h-full max-w-none">
 <ReactPlayer  
             url={Reality}
@@ -463,16 +463,16 @@ function Home() {
             muted
           />
 </div>
-<div class="absolute inset-0 bg-black bg-opacity-75 flex justify-center items-center  ">
-  <div class="text-center text-white flex flex-col  my-10">
-    <h1 class="text-md md:text-5xl font-bold"> Bringing Health to Life with Revolutionary AR and VR Experiences </h1>
-    {/* <p class="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
+<div className="absolute inset-0 bg-black bg-opacity-75 flex justify-center items-center  ">
+  <div className="text-center text-[#17fff2]  flex flex-col  my-10">
+    <h1 className="text-md md:text-5xl font-bold"> Bringing Health to Life with Revolutionary AR and VR Experiences </h1>
+    {/* <p className="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
     </p> */}
   </div>
   {/* bottom  */}
-  {/* <div class="absolute inset-x-0 bottom-0 text-center text-white mb-10">
-    <h1 class="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
-    <p class="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
+  {/* <div className="absolute inset-x-0 bottom-0 text-center text-white mb-10">
+    <h1 className="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
+    <p className="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
     </p>
   </div> */}
 </div>
@@ -511,9 +511,9 @@ function Home() {
 
                   <Link to="../vr">
                     {" "}
-                    <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
-                      <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                      <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                    <button className="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                      <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                      <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
                         Explore
                       </span>
                     </button>
@@ -536,7 +536,7 @@ function Home() {
           </div>
         </header>
       </div> */}
-      <div class="relative h-screen">
+      <div className="relative h-screen">
 <div className=" absolute hidden lg:block w-screen min-w-full min-h-full max-w-none">
 <ReactPlayer  
             url={WelcomeBg}
@@ -547,16 +547,16 @@ function Home() {
             muted
           />
 </div>
-<div class="absolute inset-0 bg-black bg-opacity-75 flex justify-center items-center  ">
-  <div class="text-center text-white flex flex-col  my-10 ">
-    <h1 class="text-md md:text-5xl font-bold">Enhancing Performance with Innovative IoT Simulations and Tools </h1>
-    {/* <p class="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
+<div className="absolute inset-0 bg-black bg-opacity-75 flex justify-center items-center  ">
+  <div className="text-center text-[#17fff2] flex flex-col  my-10 ">
+    <h1 className="text-md md:text-5xl font-bold">Enhancing Performance with Innovative IoT Simulations and Tools </h1>
+    {/* <p className="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
     </p> */}
   </div>
   {/* bottom  */}
-  {/* <div class="absolute inset-x-0 bottom-0 text-center text-white mb-10">
-    <h1 class="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
-    <p class="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
+  {/* <div className="absolute inset-x-0 bottom-0 text-center text-white mb-10">
+    <h1 className="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
+    <p className="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
     </p>
   </div> */}
 </div>
@@ -587,9 +587,9 @@ function Home() {
 
                   <Link to="../web">
                     {" "}
-                    <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
-                      <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                      <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                    <button className="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                      <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                      <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
                         Explore
                       </span>
                     </button>
@@ -622,9 +622,9 @@ function Home() {
                     back to you as soon as possible. Your input is important to
                     us, and we look forward to connecting with you!
                   </p>
-                  <button class="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
-                    <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                    <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                  <button className="my-3 group relative min-h-[50px] w-40 overflow-hidden border border-[#3c66ee]  text-white shadow-2xl transition-all rounded-full before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                    <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#3c66ee] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#3c66ee] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                    <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
                       Say Hello
                     </span>
                   </button>
