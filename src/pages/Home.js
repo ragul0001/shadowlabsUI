@@ -162,7 +162,7 @@ function Home() {
 
      <div class="relative  h-screen">
 
-  <div className=" absolute inset-0 w-full h-full object-cover">
+  <div className=" absolute hidden lg:block w-screen min-w-full min-h-full max-w-none">
   <ReactPlayer  
               url={welcomeVideo}
               width="100%"
@@ -233,7 +233,7 @@ function Home() {
       </section> */}
       {/* NEW APP DEVELOPMENT */}
       <div class="relative  h-screen">
-<div className=" absolute inset-0 w-full h-full object-cover">
+<div className=" absolute hidden lg:block w-screen min-w-full min-h-full max-w-none">
 <ReactPlayer  
             url={Video}
             width="100%"
@@ -367,7 +367,7 @@ function Home() {
       </section> */}
       {/*NEW GAMIFICATION */}
       <div class="relative  h-screen">
-<div className=" absolute inset-0 w-full h-full object-cover">
+<div className=" absolute  hidden lg:block w-screen min-w-full min-h-full max-w-none">
 <ReactPlayer  
             url={VR_Development}
             width="100%"
@@ -453,7 +453,7 @@ function Home() {
         </header>
       </div> */}
 <div class="relative  h-screen">
-<div className=" absolute inset-0 w-full h-full object-cover">
+<div className="absolute  hidden lg:block w-screen min-w-full min-h-full max-w-none">
 <ReactPlayer  
             url={Reality}
             width="100%"
@@ -536,10 +536,10 @@ function Home() {
           </div>
         </header>
       </div> */}
-      <div class="relative  h-screen">
-<div className=" absolute inset-0 w-full h-full object-cover">
+      <div class="relative h-screen">
+<div className=" absolute hidden lg:block w-screen min-w-full min-h-full max-w-none">
 <ReactPlayer  
-            url={Simulation}
+            url={WelcomeBg}
             width="100%"
             height="100%"
             playing
