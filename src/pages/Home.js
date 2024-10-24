@@ -160,7 +160,7 @@ function Home() {
 
      {/* NEW WELCOME*/}
 
-     <div className="relative  h-screen">
+     <div className="relative  h-screen" id="welcome">
 
   <div className=" absolute hidden lg:block w-screen min-w-full min-h-full max-w-none">
   <ReactPlayer  
@@ -179,9 +179,9 @@ function Home() {
       </p>
     </div>
     {/* bottom  */}
-    <div className="absolute inset-x-0 bottom-0 text-center text-[#17fff2] mb-10">
+    <div className="absolute inset-x-4 bottom-0 text-start text-[#17fff2] mb-10 w-2/3 text-wrap">
       <h1 className="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
-      <p className="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
+      <p className="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content. We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
       </p>
     </div>
   </div>
@@ -232,7 +232,7 @@ function Home() {
         </div>
       </section> */}
       {/* NEW APP DEVELOPMENT */}
-      <div className="relative  h-screen">
+      <div className="relative  h-screen" id="app">
 <div className=" absolute hidden lg:block w-screen min-w-full min-h-full max-w-none">
 <ReactPlayer  
             url={Video}
@@ -366,7 +366,7 @@ function Home() {
        
       </section> */}
       {/*NEW GAMIFICATION */}
-      <div className="relative  h-screen">
+      <div className="relative  h-screen" id="gamification">
 <div className=" absolute  hidden lg:block w-screen min-w-full min-h-full max-w-none">
 <ReactPlayer  
             url={VR_Development}
@@ -452,7 +452,7 @@ function Home() {
           </div>
         </header>
       </div> */}
-<div className="relative  h-screen">
+<div className="relative  h-screen" id="ar">
 <div className="absolute  hidden lg:block w-screen min-w-full min-h-full max-w-none">
 <ReactPlayer  
             url={Reality}
@@ -536,7 +536,7 @@ function Home() {
           </div>
         </header>
       </div> */}
-      <div className="relative h-screen">
+      <div className="relative h-screen" id="web">
 <div className=" absolute hidden lg:block w-screen min-w-full min-h-full max-w-none">
 <ReactPlayer  
             url={WelcomeBg}
