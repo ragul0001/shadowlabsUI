@@ -69,9 +69,6 @@ function Home() {
     return formValid;
   };
   
-
-  
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
@@ -186,8 +183,8 @@ function Home() {
 </div>
 
 
-      {/* App Development */}
-      <section
+      {/* OLD APP DEVELOPMENT */}
+      {/* <section
         id="app"
         className="bg-cover bg-center min-h-screen flex items-center justify-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
@@ -228,7 +225,33 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      {/* NEW APP DEVELOPMENT */}
+      <div class="relative  h-screen">
+<div className=" absolute inset-0 w-full h-full object-cover">
+<ReactPlayer  
+            url={welcomeVideo}
+            width="100%"
+            height="100%"
+            playing
+            loop
+            muted
+          />
+</div>
+<div class="absolute inset-0 bg-black bg-opacity-75 ">
+  <div class="text-center text-white flex flex-col justify-center my-10">
+    <h1 class="text-md md:text-5xl font-bold">PRODUCING THE FUTURE OF HEALTH & FITNESS MEDIA  </h1>
+    <p class="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
+    </p>
+  </div>
+  {/* bottom  */}
+  <div class="absolute inset-x-0 bottom-0 text-center text-white mb-10">
+    <h1 class="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
+    <p class="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
+    </p>
+  </div>
+</div>
+</div>
 
       {/* Backgrouond video with content */}
       {/* <div className="bg-[#0c0e1a] relative"  id="app">
