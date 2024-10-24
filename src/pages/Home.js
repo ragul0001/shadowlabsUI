@@ -172,7 +172,7 @@ function Home() {
               muted
             />
   </div>
-  <div class="absolute inset-0 bg-black bg-opacity-75 ">
+  <div class="absolute inset-0 bg-black bg-opacity-75">
     <div class="text-center text-white flex flex-col justify-center my-10">
       <h1 class="text-md md:text-5xl font-bold">PRODUCING THE FUTURE OF HEALTH & FITNESS MEDIA  </h1>
       <p class="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
@@ -241,10 +241,11 @@ function Home() {
             playing
             loop
             muted
+            
           />
 </div>
 <div class=" absolute inset-0 bg-black bg-opacity-75 flex  justify-center items-center ">
-  <div class=" text-center text-white flex flex-col  my-10">
+  <div class=" text-center text-white flex flex-col  my-10 mx-10">
     <h1 class="text-md md:text-5xl font-bold items-center ">Capturing the Essence of Wellness with Next-Gen Fitness Videos </h1>
     {/* <p class="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
     </p> */}
@@ -368,7 +369,7 @@ function Home() {
       <div class="relative  h-screen">
 <div className=" absolute inset-0 w-full h-full object-cover">
 <ReactPlayer  
-            url={Gamification}
+            url={VR_Development}
             width="100%"
             height="100%"
             playing
