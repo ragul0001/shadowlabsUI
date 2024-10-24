@@ -14,6 +14,11 @@ import VR_Development from "../assests/Videos/vr-development.mp4";
 import welcomeVideo from "../assests/Videos/homepage.mp4"
 import WelcomeBg from "../assests/Videos/welcome-bg-video.mp4";
 import emailjs from 'emailjs-com';
+//added by lakshmi
+import Video from '../assests/Videos/home_video/Video.mp4';
+import Gamification from '../assests/Videos/home_video/Gamifacations.mp4';
+import Simulation from '../assests/Videos/home_video/Simulations.mp4';
+import Reality from '../assests/Videos/home_video/Reality.mp4'
 
 function Home() {
   const [formData, setFormData] = useState({
@@ -230,7 +235,7 @@ function Home() {
       <div class="relative  h-screen">
 <div className=" absolute inset-0 w-full h-full object-cover">
 <ReactPlayer  
-            url={welcomeVideo}
+            url={Video}
             width="100%"
             height="100%"
             playing
@@ -238,18 +243,18 @@ function Home() {
             muted
           />
 </div>
-<div class="absolute inset-0 bg-black bg-opacity-75 ">
-  <div class="text-center text-white flex flex-col justify-center my-10">
-    <h1 class="text-md md:text-5xl font-bold">PRODUCING THE FUTURE OF HEALTH & FITNESS MEDIA  </h1>
-    <p class="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
-    </p>
+<div class=" absolute inset-0 bg-black bg-opacity-75 flex  justify-center items-center ">
+  <div class=" text-center text-white flex flex-col  my-10">
+    <h1 class="text-md md:text-5xl font-bold items-center ">Capturing the Essence of Wellness with Next-Gen Fitness Videos </h1>
+    {/* <p class="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
+    </p> */}
   </div>
   {/* bottom  */}
-  <div class="absolute inset-x-0 bottom-0 text-center text-white mb-10">
+  {/* <div class="absolute inset-x-0 bottom-0 text-center text-white mb-10">
     <h1 class="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
     <p class="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
     </p>
-  </div>
+  </div> */}
 </div>
 </div>
 
@@ -319,20 +324,18 @@ function Home() {
         </header>
       </div> */}
 
-      {/* Gamifications */}
-      <section
+      {/* OLD Gamifications */}
+      {/* <section
         id="gamification"
         className="bg-cover bg-center min-h-screen flex items-center justify-center"
         style={{ backgroundImage: `url(${gamification})` }}
       >
-        {/* <div className="bg-[#0C0E1A]" id="gamification" > */}
+
         <div className="container min-h-screen overflow-hidden flex justify-center items-center mx-auto max-w-7xl lg:px-8">
           <div className="flex justify-end items-center h-full">
-            {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center px-4 md:px-3 lg:px-0 py-5"> */}
+
             <div className="w-full md:w-1/2 px-4 md:px-3 lg:px-0">
-              {/* <div className="">
-                <img src={gamification} alt="the content image" className="" />
-              </div> */}
+              
 
               <div>
                 <h1 className="text-[30px] text-white font-regular">
@@ -359,11 +362,38 @@ function Home() {
             </div>
           </div>
         </div>
-        {/* </div> */}
-      </section>
-    
-      <div className=" relative" id="ar">
-        {/* Mobile video player */}
+       
+      </section> */}
+      {/*NEW GAMIFICATION */}
+      <div class="relative  h-screen">
+<div className=" absolute inset-0 w-full h-full object-cover">
+<ReactPlayer  
+            url={Gamification}
+            width="100%"
+            height="100%"
+            playing
+            loop
+            muted
+          />
+</div>
+<div class="absolute inset-0 bg-black bg-opacity-75  flex justify-center items-center ">
+  <div class="text-center text-white flex flex-col  my-10">
+    <h1 class="text-md md:text-5xl font-bold">Elevating Fitness Journeys through Engaging Game Mechanics </h1>
+    {/* <p class="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
+    </p> */}
+  </div>
+  {/* bottom  */}
+  {/* <div class="absolute inset-x-0 bottom-0 text-center text-white mb-10">
+    <h1 class="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
+    <p class="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
+    </p>
+  </div> */}
+</div>
+</div>
+
+{/*OLD AR DELEVOPMENT */}    
+      {/* <div className=" relative" id="ar">
+        
         <div className="block lg:hidden w-full min-w-full min-h-full max-w-none">
           <ReactPlayer
             url={AR_Development}
@@ -376,7 +406,7 @@ function Home() {
         </div>
 
         <header className="relative flex justify-end items-center lg:h-screen overflow-hidden">
-          {/* Content container aligned to the right */}
+
           <div className="container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500">
             <div className="flex justify-start items-center h-full">
               <div className="w-full md:w-1/2 px-4 md:px-3 lg:px-0 py-5">
@@ -408,7 +438,7 @@ function Home() {
             </div>
           </div>
 
-          {/* Video Background for larger screens */}
+       
           <div className="absolute z-10 hidden lg:block w-screen min-w-full min-h-full max-w-none">
             <ReactPlayer
               url={AR_Development}
@@ -420,11 +450,36 @@ function Home() {
             />
           </div>
         </header>
-      </div>
+      </div> */}
+<div class="relative  h-screen">
+<div className=" absolute inset-0 w-full h-full object-cover">
+<ReactPlayer  
+            url={Reality}
+            width="100%"
+            height="100%"
+            playing
+            loop
+            muted
+          />
+</div>
+<div class="absolute inset-0 bg-black bg-opacity-75 flex justify-center items-center  ">
+  <div class="text-center text-white flex flex-col  my-10">
+    <h1 class="text-md md:text-5xl font-bold"> Bringing Health to Life with Revolutionary AR and VR Experiences </h1>
+    {/* <p class="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
+    </p> */}
+  </div>
+  {/* bottom  */}
+  {/* <div class="absolute inset-x-0 bottom-0 text-center text-white mb-10">
+    <h1 class="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
+    <p class="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
+    </p>
+  </div> */}
+</div>
+</div>
 
-     
-      <div className="bg-[#0c0e1a] relative" id="vr">
-        {/* Mobile video player */}
+{/* OLD VR DEVELOPMENT */}     
+      {/* <div className="bg-[#0c0e1a] relative" id="vr">
+       
         <div className="block lg:hidden w-full min-w-full min-h-full max-w-none">
           <ReactPlayer
             url={VR_Development}
@@ -437,7 +492,7 @@ function Home() {
         </div>
 
         <header className="relative flex justify-end items-center lg:h-screen overflow-hidden">
-          {/* Content container aligned to the right */}
+         
           <div className="container mx-auto max-w-7xl lg:px-8 relative z-30 text-white rounded-xl transition-all duration-500">
             <div className="flex justify-end items-center h-full">
               <div className="w-full md:w-1/2 px-4 md:px-3 lg:px-0 py-5">
@@ -467,7 +522,7 @@ function Home() {
             </div>
           </div>
 
-          {/* Video Background for larger screens */}
+          
           <div className="absolute z-10 hidden lg:block w-screen min-w-full min-h-full max-w-none">
             <ReactPlayer
               url={VR_Development}
@@ -479,10 +534,35 @@ function Home() {
             />
           </div>
         </header>
-      </div>
+      </div> */}
+      <div class="relative  h-screen">
+<div className=" absolute inset-0 w-full h-full object-cover">
+<ReactPlayer  
+            url={Simulation}
+            width="100%"
+            height="100%"
+            playing
+            loop
+            muted
+          />
+</div>
+<div class="absolute inset-0 bg-black bg-opacity-75 flex justify-center items-center  ">
+  <div class="text-center text-white flex flex-col  my-10 ">
+    <h1 class="text-md md:text-5xl font-bold">Enhancing Performance with Innovative IoT Simulations and Tools </h1>
+    {/* <p class="mt-4 text-sm md:text-xl">Virtual Production | Video | AR/VR/MR | 3D | Game Design | Simulations & Learning | Fitness IoT
+    </p> */}
+  </div>
+  {/* bottom  */}
+  {/* <div class="absolute inset-x-0 bottom-0 text-center text-white mb-10">
+    <h1 class="text-md md:text-2xl font-bold">CREATING BOTH WEB 2.0 AND WEB 3.0 CONTENT </h1>
+    <p class="mt-4 text-sm md:text-lg">Great Media Experiences Combined for Mixed Reality, AR, VR, Immersive Games, Fitness IoT and all Web 3.0 Content.<br/> We are helping companies go from Web 2.0 To Web 3.0 with their content and more ... 
+    </p>
+  </div> */}
+</div>
+</div>
 
-      {/* Web3.0 */}
-      <section
+      {/* OLD Web3.0 */}
+      {/* <section
         id="web"
         className=" bg-cover bg-center min-h-screen flex items-center justify-center"
         style={{ backgroundImage: `url(${Web})` }}
@@ -522,7 +602,8 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      
       {/* Contact */}
       <div
         id="contact"
